@@ -152,6 +152,14 @@ class TreeOverview(BaseSubcomponent, BaseDraggable, QtWidgets.QTreeWidget):
         target_treeitem = self.currentItem()
         if target_treeitem is not None:
             target_treeitem.copy_linked()
+            
+    def copy_item_shallow(self):
+        """Copies the currently selected treeitem to the clipboard (if
+        supported by the treeitem) as a shallow copy.
+        """        
+        target_treeitem = self.currentItem()
+        if target_treeitem is not None:
+            target_treeitem.copy_shallow()
 
     def paste_item(self):
         """Pastes the clipboard onto the currently selected treeitem (if
@@ -176,22 +184,6 @@ class TreeOverview(BaseSubcomponent, BaseDraggable, QtWidgets.QTreeWidget):
         target_treeitem = self.currentItem()
         if target_treeitem is not None:
             target_treeitem.permanently_delete()
-
-    def create_linked_copy(self):
-        """Creates a linked copy of the currently selected item (if supported
-        by the treeitem).
-        """
-        target_treeitem = self.currentItem()
-        if target_treeitem is not None:
-            target_treeitem.create_linked_copy()
-
-    def create_unlinked_copy(self):
-        """Creates an unlinked copy of the currently selected item (if
-        supported by the treeitem).
-        """
-        target_treeitem = self.currentItem()
-        if target_treeitem is not None:
-            target_treeitem.create_unlinked_copy()
 
     def select_item(self, name, open_tab=True):
         """Selects all items that match the specified name.

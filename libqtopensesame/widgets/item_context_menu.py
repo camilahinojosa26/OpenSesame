@@ -57,6 +57,9 @@ class ItemContextMenu(BaseSubcomponent, QtWidgets.QMenu):
         self.add_action("edit-copy", _("Copy (linked)"),
                         self.treeitem.copy_linked,
                         cfg.shortcut_copy_clipboard_linked)
+        if self.treeitem.item.children():
+            self.add_action("edit-copy", _("Copy (shallow)"),
+                            self.treeitem.copy_shallow)
         if self.treeitem.clipboard_data() is not None:
             self.add_action("edit-paste", _("Paste"),
                             self.treeitem.paste,
