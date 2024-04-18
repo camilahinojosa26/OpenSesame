@@ -11653,5 +11653,43 @@
     "he": "לא ניתן להעתיק עותקים מקושרים בין חלונות. השתמש/י במקום זאת בעותק שאינו מקושר.",
     "ru": "Невозможно скопировать связанные копии между окнами. Используйте вместо этого несвязанную копию.",
     "tr": "Pencereler arasında bağlantılı kopyalar kopyalanamaz. Bunun yerine bağlantısız kopyayı kullanın."
+  },
+  "Copy (shallow)": {
+    "nl": "Kopieer (ondiep)",
+    "de": "Kopieren (flach)",
+    "fr": "Copie (superficielle)",
+    "es": "Copia (superficial)",
+    "it": "Copia (superficiale)",
+    "pt": "Cópia (rasa)",
+    "zh": "复制（浅层）",
+    "yue": "拷貝（淺層）",
+    "ja": "コピー (シャロー)",
+    "ko": "복사 (얕은)",
+    "id": "Salin (dangkal)",
+    "hi": "प्रतिलिपि (उथली)",
+    "bn": "অনুলিপি (অগভীর)",
+    "ar": "نسخ (سطحي)",
+    "he": "העתק (רדוד)",
+    "ru": "Копировать (поверхностное)",
+    "tr": "Kopyala (yüzeysel)"
+  },
+  "Sigmund AI assistant": {
+    "nl": "Sigmund AI-assistent",
+    "de": "Sigmund AI-Assistent",
+    "fr": "Assistant AI Sigmund",
+    "es": "Asistente de IA Sigmund",
+    "it": "Assistente IA Sigmund",
+    "pt": "Assistente de IA Sigmund",
+    "zh": "西格蒙德人工智能助手",
+    "yue": "西格蒙德人工智能助理",
+    "ja": "シグムンドAIアシスタント",
+    "ko": "시그문드 AI 어시스턴트",
+    "id": "Asisten AI Sigmund",
+    "hi": "सिगमंड AI सहायक",
+    "bn": "সিগমুন্ড AI সহায়ক",
+    "ar": "مساعد سيغموند الذكاء الاصطناعي",
+    "he": "עוזר אינטליגנציה מלאכותית זיגמונד",
+    "ru": "Сигмунд AI помощник",
+    "tr": "Sigmund Yapay Zeka asistanı"
   }
 }
