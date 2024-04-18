@@ -349,27 +349,27 @@
         <translation>Включить</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="280" />
+        <location filename="../../../translation_tools/translatables.py" line="286" />
         <source>Delete</source>
         <translation>Удалить</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="278" />
+        <location filename="../../../translation_tools/translatables.py" line="281" />
         <source>Open</source>
         <translation>Открыть</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="287" />
+        <location filename="../../../translation_tools/translatables.py" line="277" />
         <source>Edit run-if statement</source>
         <translation>Изменить оператор run-if</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="285" />
+        <location filename="../../../translation_tools/translatables.py" line="278" />
         <source>Disable</source>
         <translation>Отключить</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="286" />
+        <location filename="../../../translation_tools/translatables.py" line="284" />
         <source>Permanently delete</source>
         <translation>Удалить окончательно</translation>
     </message>
@@ -379,45 +379,50 @@
         <translation>Помощь</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="279" />
+        <location filename="../../../translation_tools/translatables.py" line="282" />
         <source>Paste</source>
         <translation>Вставить</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="277" />
+        <location filename="../../../translation_tools/translatables.py" line="287" />
         <source>Copy (linked)</source>
         <translation>Копировать (связанный)</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="281" />
+        <location filename="../../../translation_tools/translatables.py" line="289" />
         <source>Copy (unlinked)</source>
         <translation>Копировать (без связи)</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="284" />
+        <location filename="../../../translation_tools/translatables.py" line="280" />
         <source>Rename</source>
         <translation>Переименовать</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="282" />
+        <location filename="../../../translation_tools/translatables.py" line="279" />
         <source>Permanently delete all linked copies</source>
         <translation>Удалить все связанные копии окончательно</translation>
+    </message>
+    <message>
+        <location filename="../../../translation_tools/translatables.py" line="285" />
+        <source>Copy (shallow)</source>
+        <translation>Копировать (поверхностное)</translation>
     </message>
 </context>
 <context>
     <name>core_item_view_button</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="198" />
+        <location filename="../../../translation_tools/translatables.py" line="199" />
         <source>View script</source>
         <translation>Просмотреть скрипт</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="199" />
+        <location filename="../../../translation_tools/translatables.py" line="200" />
         <source>View controls</source>
         <translation>Просмотреть элементы управления</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="200" />
+        <location filename="../../../translation_tools/translatables.py" line="198" />
         <source>Select view</source>
         <translation>Выбор вида</translation>
     </message>
@@ -430,7 +435,7 @@
 <context>
     <name>core_markdown</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="302" />
+        <location filename="../../../translation_tools/translatables.py" line="303" />
         <source>Dismiss this message</source>
         <translation>Пропустить это сообщение</translation>
     </message>
@@ -446,62 +451,62 @@
 <context>
     <name>core_pool_widget</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="189" />
+        <location filename="../../../translation_tools/translatables.py" line="186" />
         <source>Failed to rename "%s" to "%s".</source>
         <translation>Не удалось переименовать "%s" в "%s".</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="187" />
+        <location filename="../../../translation_tools/translatables.py" line="191" />
         <source>Select</source>
         <translation>Выбрать</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="192" />
+        <location filename="../../../translation_tools/translatables.py" line="184" />
         <source>Select file from pool</source>
         <translation>Выбрать файл из пула</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="191" />
+        <location filename="../../../translation_tools/translatables.py" line="192" />
         <source>Remove from pool</source>
         <translation>Удалить из пула</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="195" />
+        <location filename="../../../translation_tools/translatables.py" line="190" />
         <source>There already is a file named '%s' in the file pool</source>
         <translation>В пуле файлов уже есть файл с именем '%s'</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="184" />
+        <location filename="../../../translation_tools/translatables.py" line="189" />
         <source>Add files to pool</source>
         <translation>Добавить файлы в пул</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="194" />
+        <location filename="../../../translation_tools/translatables.py" line="193" />
         <source>Failed to refresh file pool</source>
         <translation>Не удалось обновить пул файлов</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="193" />
+        <location filename="../../../translation_tools/translatables.py" line="185" />
         <source>Rename</source>
         <translation>Переименовать</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="190" />
+        <location filename="../../../translation_tools/translatables.py" line="187" />
         <source>Failed to copy %s to file pool</source>
         <translation>Не удалось скопировать %s в пул файлов</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="186" />
+        <location filename="../../../translation_tools/translatables.py" line="194" />
         <source>And %d more file(s)</source>
         <translation>И еще %d файла(ов)</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="185" />
+        <location filename="../../../translation_tools/translatables.py" line="188" />
         <source>Open</source>
         <translation>Открыть</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="188" />
+        <location filename="../../../translation_tools/translatables.py" line="195" />
         <source>Cancel</source>
         <translation>Отмена</translation>
     </message>
@@ -517,27 +522,27 @@
 <context>
     <name>core_qtautoplugin</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="65" />
+        <location filename="../../../translation_tools/translatables.py" line="68" />
         <source>You must specify "type" for %s controls in info.yaml</source>
         <translation>Вы должны указать "тип" для элементов управления %s в файле info.yaml</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="66" />
+        <location filename="../../../translation_tools/translatables.py" line="65" />
         <source>"%s" is not a valid qtautoplugin control</source>
         <translation>"%s" не является допустимым элементом управления qtautoplugin</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="67" />
+        <location filename="../../../translation_tools/translatables.py" line="66" />
         <source>You must specify "%s" for %s controls in info.yaml</source>
         <translation>Вы должны указать "%s" для элементов управления %s в файле info.yaml</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="64" />
+        <location filename="../../../translation_tools/translatables.py" line="67" />
         <source>Name "%s" is already taken in qtautoplugin control</source>
         <translation>Имя "%s" уже занято в элементе управления qtautoplugin</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="68" />
+        <location filename="../../../translation_tools/translatables.py" line="64" />
         <source>Invalid variable name (%s) specified in %s plugin info</source>
         <translation>Недопустимое имя переменной (%s) указано в информации о плагине %s</translation>
     </message>
@@ -545,12 +550,12 @@
 <context>
     <name>core_qtitem</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="24" />
+        <location filename="../../../translation_tools/translatables.py" line="25" />
         <source>Failed to set control '%s': %s</source>
         <translation>Не удалось установить элемент управления '%s': %s</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="23" />
+        <location filename="../../../translation_tools/translatables.py" line="24" />
         <source>Apply</source>
         <translation>Применить</translation>
     </message>
@@ -560,7 +565,7 @@
         <translation>Описание по умолчанию</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="25" />
+        <location filename="../../../translation_tools/translatables.py" line="23" />
         <source>Toggle pop-out</source>
         <translation>Переключить всплывающее окно</translation>
     </message>
@@ -573,12 +578,12 @@
 <context>
     <name>core_qtitem_store</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="291" />
+        <location filename="../../../translation_tools/translatables.py" line="292" />
         <source>An item name cannot be empty.</source>
         <translation>Имя объекта не может быть пустым.</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="292" />
+        <location filename="../../../translation_tools/translatables.py" line="293" />
         <source>An item with that name already exists.</source>
         <translation>Объект с таким именем уже существует.</translation>
     </message>
@@ -586,57 +591,57 @@
 <context>
     <name>core_qtopensesame</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="167" />
+        <location filename="../../../translation_tools/translatables.py" line="160" />
         <source> [read only]</source>
         <translation> [только для чтения]</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="165" />
+        <location filename="../../../translation_tools/translatables.py" line="164" />
         <source>Failed to save file. Error: %s</source>
         <translation>Не удалось сохранить файл. Ошибка: %s</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="160" />
+        <location filename="../../../translation_tools/translatables.py" line="169" />
         <source>Error</source>
         <translation>Ошибка</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="169" />
+        <location filename="../../../translation_tools/translatables.py" line="170" />
         <source>Save changes?</source>
         <translation>Сохранить изменения?</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="162" />
+        <location filename="../../../translation_tools/translatables.py" line="168" />
         <source>Save as…</source>
         <translation>Сохранить как…</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="161" />
+        <location filename="../../../translation_tools/translatables.py" line="166" />
         <source>Open file</source>
         <translation>Открыть файл</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="168" />
+        <location filename="../../../translation_tools/translatables.py" line="161" />
         <source>New experiment</source>
         <translation>Новый эксперимент</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="166" />
+        <location filename="../../../translation_tools/translatables.py" line="163" />
         <source>(No recent files)</source>
         <translation>(Нет недавних файлов)</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="164" />
+        <location filename="../../../translation_tools/translatables.py" line="165" />
         <source>Could not parse script: %s</source>
         <translation>Не удалось разобрать скрипт: %s</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="163" />
+        <location filename="../../../translation_tools/translatables.py" line="162" />
         <source>Your experiment contains unsaved changes. Do you want to save your experiment?</source>
         <translation>Ваш эксперимент содержит несохраненные изменения. Вы хотите сохранить эксперимент?</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="170" />
+        <location filename="../../../translation_tools/translatables.py" line="167" />
         <source>The following error occurred while trying to save:&lt;br/&gt;%s</source>
         <translation>Следующая ошибка произошла при попытке сохранить:&lt;br/&gt;%s</translation>
     </message>
@@ -654,12 +659,12 @@
         <translation>Настройки</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="221" />
+        <location filename="../../../translation_tools/translatables.py" line="218" />
         <source>Back-end settings</source>
         <translation>Настройки серверной части</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="218" />
+        <location filename="../../../translation_tools/translatables.py" line="223" />
         <source>General script editor</source>
         <translation>Общий редактор скриптов</translation>
     </message>
@@ -669,7 +674,7 @@
         <translation>Общие свойства</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="223" />
+        <location filename="../../../translation_tools/translatables.py" line="221" />
         <source>Help</source>
         <translation>Помощь</translation>
     </message>
@@ -682,22 +687,22 @@
         <translation>Опросник шаблон</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="296" />
+        <location filename="../../../translation_tools/translatables.py" line="300" />
         <source>Default template</source>
         <translation>Шаблон по умолчанию</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="295" />
+        <location filename="../../../translation_tools/translatables.py" line="296" />
         <source>Eye-tracking template</source>
         <translation>Шаблон для отслеживания глаз</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="297" />
+        <location filename="../../../translation_tools/translatables.py" line="299" />
         <source>Extended template</source>
         <translation>Расширенный шаблон</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="299" />
+        <location filename="../../../translation_tools/translatables.py" line="297" />
         <source>OSWeb (online) template</source>
         <translation>OSWeb (online) шаблон</translation>
     </message>
@@ -742,7 +747,7 @@
 <context>
     <name>core_tree_item_item</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="236" />
+        <location filename="../../../translation_tools/translatables.py" line="234" />
         <source>Permanently delete item</source>
         <translation>Удалить элемент навсегда</translation>
     </message>
@@ -752,23 +757,23 @@
         <translation>Вы уверены, что хотите удалить &lt;b&gt;%s&lt;/b&gt; навсегда? Все связанные копии &lt;b&gt;%s&lt;/b&gt; будут удалены. Вы не сможете отменить это.</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="237" />
+        <location filename="../../../translation_tools/translatables.py" line="232" />
         <source>Set as item to run for %s</source>
         <translation>Установить как элемент для выполнения для %s</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="234" />
+        <location filename="../../../translation_tools/translatables.py" line="233" />
         <source>Type: %s
 Description: %s</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="233" />
+        <location filename="../../../translation_tools/translatables.py" line="236" />
         <source>Drop below %s</source>
         <translation>Бросить ниже %s</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="232" />
+        <location filename="../../../translation_tools/translatables.py" line="237" />
         <source>Insert into %s</source>
         <translation>Вставить в %s</translation>
     </message>
@@ -776,32 +781,32 @@ Description: %s</source>
 <context>
     <name>core_tree_overview</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="245" />
+        <location filename="../../../translation_tools/translatables.py" line="243" />
         <source>Insert after %s</source>
         <translation>Вставить после %s</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="240" />
+        <location filename="../../../translation_tools/translatables.py" line="242" />
         <source>Unknown item type: %s</source>
         <translation>Неизвестный тип элемента: %s</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="242" />
+        <location filename="../../../translation_tools/translatables.py" line="241" />
         <source>Item name</source>
         <translation>Наименование элемента</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="243" />
+        <location filename="../../../translation_tools/translatables.py" line="244" />
         <source>Run if</source>
         <translation>Выполнить, если</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="241" />
+        <location filename="../../../translation_tools/translatables.py" line="245" />
         <source>Insert into %s</source>
         <translation>Вставить в %s</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="244" />
+        <location filename="../../../translation_tools/translatables.py" line="240" />
         <source>Cannot copy linked copies between windows. Use unlinked copy instead.</source>
         <translation>Невозможно скопировать связанные копии между окнами. Используйте вместо этого несвязанную копию.</translation>
     </message>
@@ -817,12 +822,12 @@ Description: %s</source>
 <context>
     <name>core_tree_unused_items_item</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="261" />
+        <location filename="../../../translation_tools/translatables.py" line="260" />
         <source>Unused items</source>
         <translation>Неиспользуемые элементы</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="260" />
+        <location filename="../../../translation_tools/translatables.py" line="261" />
         <source>Move to unused items</source>
         <translation>Переместить в неиспользуемые элементы</translation>
     </message>
@@ -830,22 +835,22 @@ Description: %s</source>
 <context>
     <name>core_unused_widget</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="227" />
+        <location filename="../../../translation_tools/translatables.py" line="226" />
         <source>Permanently delete items?</source>
         <translation>Удалить элементы навсегда?</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="228" />
+        <location filename="../../../translation_tools/translatables.py" line="229" />
         <source>Are you sure you want to permanently delete all unused items? This action cannot be undone.</source>
         <translation>Вы уверены, что хотите навсегда удалить все неиспользуемые элементы? Это действие нельзя отменить.</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="226" />
+        <location filename="../../../translation_tools/translatables.py" line="228" />
         <source>Permanently delete unused items</source>
         <translation>Удалить неиспользуемые элементы навсегда</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="229" />
+        <location filename="../../../translation_tools/translatables.py" line="227" />
         <source>&lt;b&gt;&lt;font size='5'&gt;Unused&lt;/font&gt;&lt;/b&gt;</source>
         <translation>&lt;b&gt;&lt;font size='5'&gt;Неиспользуемый&lt;/font&gt;&lt;/b&gt;</translation>
     </message>
@@ -853,12 +858,12 @@ Description: %s</source>
 <context>
     <name>core_webbrowser</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="207" />
+        <location filename="../../../translation_tools/translatables.py" line="208" />
         <source>Loading …</source>
         <translation>Загрузка …</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="208" />
+        <location filename="../../../translation_tools/translatables.py" line="207" />
         <source>Done</source>
         <translation>Выполнено</translation>
     </message>
@@ -866,17 +871,17 @@ Description: %s</source>
 <context>
     <name>extension_JupyterConsole</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="577" />
+        <location filename="../../../translation_tools/translatables.py" line="581" />
         <source>The {} (inprocess={}) kernel does not support debugging</source>
         <translation>Ядро {} (inprocess={}) не поддерживает отладку</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="576" />
+        <location filename="../../../translation_tools/translatables.py" line="578" />
         <source>Restart kernel</source>
         <translation>Перезапустить ядро</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="578" />
+        <location filename="../../../translation_tools/translatables.py" line="580" />
         <source>Start new console</source>
         <translation>Запустить новую консоль</translation>
     </message>
@@ -889,7 +894,7 @@ Description: %s</source>
 <context>
     <name>extension_SubprocessManager</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="516" />
+        <location filename="../../../translation_tools/translatables.py" line="517" />
         <source>Subprocesses</source>
         <translation>Подпроцессы</translation>
     </message>
@@ -897,17 +902,17 @@ Description: %s</source>
 <context>
     <name>extension_after_experiment</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="524" />
+        <location filename="../../../translation_tools/translatables.py" line="523" />
         <source>The following extra data files where created:</source>
         <translation>Были созданы следующие дополнительные файлы данных:</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="523" />
+        <location filename="../../../translation_tools/translatables.py" line="524" />
         <source>Finished</source>
         <translation>Завершено</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="522" />
+        <location filename="../../../translation_tools/translatables.py" line="525" />
         <source>Handles the end of an experimental run</source>
         <translation>Обрабатывает окончание экспериментального прогона</translation>
     </message>
@@ -915,12 +920,12 @@ Description: %s</source>
 <context>
     <name>extension_analytics</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="541" />
+        <location filename="../../../translation_tools/translatables.py" line="542" />
         <source>Got it!</source>
         <translation>Понял!</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="542" />
+        <location filename="../../../translation_tools/translatables.py" line="543" />
         <source>Sends a ping to Google Analytics when OpenSesame is started</source>
         <translation>Отправляет пинг в Google Analytics при запуске OpenSesame</translation>
     </message>
@@ -928,7 +933,7 @@ Description: %s</source>
 <context>
     <name>extension_automatic_backup</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="509" />
+        <location filename="../../../translation_tools/translatables.py" line="511" />
         <source>Periodically saves your experiment to a back-up folder.</source>
         <translation>Периодически сохраняет ваш эксперимент в папку резервного копирования.</translation>
     </message>
@@ -941,22 +946,22 @@ Description: %s</source>
 <context>
     <name>extension_bug_report</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="547" />
+        <location filename="../../../translation_tools/translatables.py" line="548" />
         <source>Oops ...</source>
         <translation>Ой ...</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="549" />
+        <location filename="../../../translation_tools/translatables.py" line="547" />
         <source>Bug report sent</source>
         <translation>Отчет об ошибке отправлен</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="545" />
+        <location filename="../../../translation_tools/translatables.py" line="550" />
         <source>Bug report not sent</source>
         <translation>Отчет об ошибке не отправлен</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="548" />
+        <location filename="../../../translation_tools/translatables.py" line="549" />
         <source>Bug report</source>
         <translation>Отчет об ошибке</translation>
     </message>
@@ -969,12 +974,12 @@ Description: %s</source>
 <context>
     <name>extension_command_palette</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="560" />
+        <location filename="../../../translation_tools/translatables.py" line="562" />
         <source>Trigger menu actions</source>
         <translation>Срабатывание действий меню</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="559" />
+        <location filename="../../../translation_tools/translatables.py" line="561" />
         <source>Command palette</source>
         <translation>Палитра команд</translation>
     </message>
@@ -982,12 +987,12 @@ Description: %s</source>
 <context>
     <name>extension_example_experiments</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="567" />
+        <location filename="../../../translation_tools/translatables.py" line="570" />
         <source>Example experiments</source>
         <translation>Примеры экспериментов</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="568" />
+        <location filename="../../../translation_tools/translatables.py" line="569" />
         <source>Shows a list of example experiments</source>
         <translation>Показывает список примеров экспериментов</translation>
     </message>
@@ -1000,7 +1005,7 @@ Description: %s</source>
         <translation>Открывает внешние файлы</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="532" />
+        <location filename="../../../translation_tools/translatables.py" line="534" />
         <source>Handles opening of external files</source>
         <translation>Обрабатывает открытие внешних файлов</translation>
     </message>
@@ -1008,27 +1013,27 @@ Description: %s</source>
 <context>
     <name>extension_get_started</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="586" />
+        <location filename="../../../translation_tools/translatables.py" line="588" />
         <source>Get started!</source>
         <translation>Приступим!</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="585" />
+        <location filename="../../../translation_tools/translatables.py" line="584" />
         <source>Continue with a recent experiment:</source>
         <translation>Продолжить с недавним экспериментом:</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="583" />
+        <location filename="../../../translation_tools/translatables.py" line="587" />
         <source>New…</source>
         <translation>Новый…</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="584" />
+        <location filename="../../../translation_tools/translatables.py" line="586" />
         <source>Start a new experiment</source>
         <translation>Начать новый эксперимент</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="582" />
+        <location filename="../../../translation_tools/translatables.py" line="585" />
         <source>Shows the get-started tab and opens an experiment on startup, if one was
 passed on the command line
 </source>
@@ -1038,45 +1043,50 @@ passed on the command line
 <context>
     <name>extension_help</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="552" />
+        <location filename="../../../translation_tools/translatables.py" line="554" />
         <source>PsychoPy API</source>
         <translation>PsychoPy API</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="554" />
+        <location filename="../../../translation_tools/translatables.py" line="553" />
         <source>Please wait …</source>
         <translation>Пожалуйста, подождите …</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="553" />
+        <location filename="../../../translation_tools/translatables.py" line="555" />
         <source>Online help</source>
         <translation>Онлайн-помощь</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="556" />
+        <location filename="../../../translation_tools/translatables.py" line="557" />
         <source>Help</source>
         <translation>Помощь</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="555" />
+        <location filename="../../../translation_tools/translatables.py" line="558" />
         <source>Adds a Help menu</source>
         <translation>Добавляет меню "Помощь"</translation>
+    </message>
+    <message>
+        <location filename="../../../translation_tools/translatables.py" line="556" />
+        <source>Sigmund AI assistant</source>
+        <translation>Сигмунд AI помощник</translation>
     </message>
 </context>
 <context>
     <name>extension_jupyter_console</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="572" />
+        <location filename="../../../translation_tools/translatables.py" line="575" />
         <source>Show console</source>
         <translation>Показать консоль</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="573" />
+        <location filename="../../../translation_tools/translatables.py" line="574" />
         <source>Show Jupyter/ IPython console</source>
         <translation>Показать консоль Jupyter/IPython</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="571" />
+        <location filename="../../../translation_tools/translatables.py" line="573" />
         <source>A Jupyter console</source>
         <translation>Консоль Jupyter</translation>
     </message>
@@ -1084,12 +1094,12 @@ passed on the command line
 <context>
     <name>extension_notifications</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="564" />
+        <location filename="../../../translation_tools/translatables.py" line="566" />
         <source>Notifications</source>
         <translation>Уведомления</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="563" />
+        <location filename="../../../translation_tools/translatables.py" line="565" />
         <source>Pretty notifications for OpenSesame</source>
         <translation>Красивые уведомления для OpenSesame</translation>
     </message>
@@ -1097,7 +1107,7 @@ passed on the command line
 <context>
     <name>extension_opensesame_4_notifications</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="501" />
+        <location filename="../../../translation_tools/translatables.py" line="502" />
         <source>Notifies the user if an experiment has been created with a different version
 of OpenSesame.
 </source>
@@ -1105,7 +1115,7 @@ of OpenSesame.
 </translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="502" />
+        <location filename="../../../translation_tools/translatables.py" line="503" />
         <source>OpenSesame 4 notifications</source>
         <translation>Уведомления OpenSesame 4</translation>
     </message>
@@ -1113,7 +1123,7 @@ of OpenSesame.
 <context>
     <name>extension_preload_items</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="497" />
+        <location filename="../../../translation_tools/translatables.py" line="499" />
         <source>Preload items</source>
         <translation>Подгружать элементы</translation>
     </message>
@@ -1131,17 +1141,17 @@ of OpenSesame.
         <translation>Преобразовать пробелы в табуляции</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="174" />
+        <location filename="../../../translation_tools/translatables.py" line="173" />
         <source>Convert tabs to spaces</source>
         <translation>Преобразовать табуляции в пробелы</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="175" />
+        <location filename="../../../translation_tools/translatables.py" line="174" />
         <source>Manages PyQode, the code-editor component</source>
         <translation>Управляет PyQode, компонентом редактора кода</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="173" />
+        <location filename="../../../translation_tools/translatables.py" line="175" />
         <source>PyQode manager</source>
         <translation>Менеджер PyQode</translation>
     </message>
@@ -1149,12 +1159,12 @@ of OpenSesame.
 <context>
     <name>extension_quick_selector</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="505" />
+        <location filename="../../../translation_tools/translatables.py" line="506" />
         <source>Select stuff quickly</source>
         <translation>Выберите вещи быстро</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="506" />
+        <location filename="../../../translation_tools/translatables.py" line="507" />
         <source>A general-purpose quick-select dialog</source>
         <translation>Универсальный диалоговый окно быстрого выбора</translation>
     </message>
@@ -1162,17 +1172,17 @@ of OpenSesame.
 <context>
     <name>extension_quick_switcher</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="537" />
+        <location filename="../../../translation_tools/translatables.py" line="539" />
         <source>Search items …</source>
         <translation>Поиск элементов …</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="538" />
+        <location filename="../../../translation_tools/translatables.py" line="537" />
         <source>Quickly open items</source>
         <translation>Быстро открывать элементы</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="536" />
+        <location filename="../../../translation_tools/translatables.py" line="538" />
         <source>Quick switcher</source>
         <translation>Быстрый переключатель</translation>
     </message>
@@ -1180,7 +1190,7 @@ of OpenSesame.
 <context>
     <name>extension_restore_ui_elements</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="513" />
+        <location filename="../../../translation_tools/translatables.py" line="514" />
         <source>Show toolbars and menu when they are hidden</source>
         <translation>Показывать панели инструментов и меню, когда они скрыты</translation>
     </message>
@@ -1188,7 +1198,7 @@ of OpenSesame.
 <context>
     <name>extension_subprocess_manager</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="519" />
+        <location filename="../../../translation_tools/translatables.py" line="520" />
         <source>Manages subprocesses</source>
         <translation>Управление подпроцессами</translation>
     </message>
@@ -1196,7 +1206,7 @@ of OpenSesame.
 <context>
     <name>extension_system_check</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="481" />
+        <location filename="../../../translation_tools/translatables.py" line="482" />
         <source>Checks the system and provides warnings if necessary</source>
         <translation>Проверяет систему и предоставляет предупреждения, если необходимо</translation>
     </message>
@@ -1204,17 +1214,17 @@ of OpenSesame.
 <context>
     <name>extension_tab_to_dockwidget</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="528" />
+        <location filename="../../../translation_tools/translatables.py" line="529" />
         <source>Tab to dockwidget</source>
         <translation>Вкладка к док-виджету</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="529" />
+        <location filename="../../../translation_tools/translatables.py" line="530" />
         <source>Turn tab into dockwidget</source>
         <translation>Превратить вкладку в док-виджет</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="527" />
+        <location filename="../../../translation_tools/translatables.py" line="528" />
         <source>Turns a tab into a dockwidget</source>
         <translation>Превращает вкладку в док-виджет</translation>
     </message>
@@ -1222,12 +1232,12 @@ of OpenSesame.
 <context>
     <name>extension_toolbar_menu</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="589" />
+        <location filename="../../../translation_tools/translatables.py" line="592" />
         <source>Menu</source>
         <translation>Меню</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="590" />
+        <location filename="../../../translation_tools/translatables.py" line="594" />
         <source>Integrates the menu into the toolbar</source>
         <translation>Интегрирует меню в панель инструментов</translation>
     </message>
@@ -1237,7 +1247,7 @@ of OpenSesame.
         <translation>Интеграция меню и панели инструментов</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="592" />
+        <location filename="../../../translation_tools/translatables.py" line="593" />
         <source>Integrates the menu into the toolbar.</source>
         <translation>Интегрирует меню в панель инструментов.</translation>
     </message>
@@ -1250,22 +1260,22 @@ of OpenSesame.
         <translation>Отменить</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="484" />
+        <location filename="../../../translation_tools/translatables.py" line="485" />
         <source>Undo most recent action</source>
         <translation>Отменить последнее действие</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="486" />
+        <location filename="../../../translation_tools/translatables.py" line="488" />
         <source>Implements undo/ redo</source>
         <translation>Реализует отмену/повтор</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="485" />
+        <location filename="../../../translation_tools/translatables.py" line="486" />
         <source>Redo</source>
         <translation>Повторить</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="488" />
+        <location filename="../../../translation_tools/translatables.py" line="489" />
         <source>Redo most recently undone action</source>
         <translation>Повторить последнее отменённое действие</translation>
     </message>
@@ -1273,22 +1283,22 @@ of OpenSesame.
 <context>
     <name>extension_variable_inspector</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="494" />
+        <location filename="../../../translation_tools/translatables.py" line="492" />
         <source>Experiment status: &lt;b&gt;%s&lt;/b&gt;</source>
         <translation>Статус эксперимента: &lt;b&gt;%s&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="492" />
+        <location filename="../../../translation_tools/translatables.py" line="493" />
         <source>Variable inspector</source>
         <translation>Инспектор переменных</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="491" />
+        <location filename="../../../translation_tools/translatables.py" line="495" />
         <source>Graphical variable inspector</source>
         <translation>Графический инспектор переменных</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="493" />
+        <location filename="../../../translation_tools/translatables.py" line="494" />
         <source>Show variable inspector</source>
         <translation>Показать инспектор переменных</translation>
     </message>
@@ -1317,12 +1327,12 @@ of OpenSesame.
 <context>
     <name>item_inline_script</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="29" />
+        <location filename="../../../translation_tools/translatables.py" line="30" />
         <source>Run</source>
         <translation>Запустить</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="30" />
+        <location filename="../../../translation_tools/translatables.py" line="29" />
         <source>Prepare</source>
         <translation>Подготовить</translation>
     </message>
@@ -1335,62 +1345,62 @@ of OpenSesame.
 <context>
     <name>item_keyboard_response</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="5" />
+        <location filename="../../../translation_tools/translatables.py" line="14" />
         <source>Leave empty to use "correct_response"</source>
         <translation>Оставьте пустым, чтобы использовать "correct_response"</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="11" />
+        <location filename="../../../translation_tools/translatables.py" line="5" />
         <source>Flush pending key events</source>
         <translation>Сброс ожидающих событий клавиш</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="7" />
+        <location filename="../../../translation_tools/translatables.py" line="3" />
         <source>Collects keyboard responses</source>
         <translation>Собирает ответы с клавиатуры</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="13" />
+        <location filename="../../../translation_tools/translatables.py" line="6" />
         <source>Correct response</source>
         <translation>Правильный ответ</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="4" />
+        <location filename="../../../translation_tools/translatables.py" line="12" />
         <source>Allowed responses</source>
         <translation>Разрешенные ответы</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="9" />
+        <location filename="../../../translation_tools/translatables.py" line="4" />
         <source>Timeout</source>
         <translation>Таймаут</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="6" />
+        <location filename="../../../translation_tools/translatables.py" line="9" />
         <source>Key names</source>
         <translation>Названия клавиш</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="14" />
+        <location filename="../../../translation_tools/translatables.py" line="10" />
         <source>The following key names are valid:</source>
         <translation>Следующие названия клавиш действительны:</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="10" />
+        <location filename="../../../translation_tools/translatables.py" line="11" />
         <source>In milliseconds or "infinite"</source>
         <translation>В миллисекундах или "бесконечно"</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="8" />
+        <location filename="../../../translation_tools/translatables.py" line="13" />
         <source>Event type</source>
         <translation>Тип события</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="3" />
+        <location filename="../../../translation_tools/translatables.py" line="8" />
         <source>Separated by semicolons, e.g. "z;/"</source>
         <translation>Разделены точками с запятой, например, "z;/"</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="12" />
+        <location filename="../../../translation_tools/translatables.py" line="7" />
         <source>List available keys</source>
         <translation>Список доступных клавиш</translation>
     </message>
@@ -1411,42 +1421,42 @@ of OpenSesame.
 <context>
     <name>item_loop</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="115" />
+        <location filename="../../../translation_tools/translatables.py" line="110" />
         <source>Note: Loop data will be read from file</source>
         <translation>Примечание: Данные цикла будут считываться из файла</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="112" />
+        <location filename="../../../translation_tools/translatables.py" line="107" />
         <source># Preview of loop table</source>
         <translation># Предпросмотр таблицы цикла</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="106" />
+        <location filename="../../../translation_tools/translatables.py" line="116" />
         <source>once</source>
         <translation>однажды</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="116" />
+        <location filename="../../../translation_tools/translatables.py" line="114" />
         <source>Summary: &lt;b&gt;%s&lt;/b&gt; will be called &lt;b&gt;%s&lt;/b&gt; in &lt;b&gt;%s&lt;/b&gt; order.</source>
         <translation>Резюме: &lt;b&gt;%s&lt;/b&gt; будет вызван &lt;b&gt;%s&lt;/b&gt; в порядке &lt;b&gt;%s&lt;/b&gt;.</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="110" />
+        <location filename="../../../translation_tools/translatables.py" line="108" />
         <source>Warning: No item to run has been specified</source>
         <translation>Предупреждение: Не указан элемент для запуска</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="113" />
+        <location filename="../../../translation_tools/translatables.py" line="112" />
         <source>This means that %s %s and %s %s.</source>
         <translation>Это означает, что %s %s и %s %s.</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="111" />
+        <location filename="../../../translation_tools/translatables.py" line="106" />
         <source>The number of rows is %s.</source>
         <translation>Количество строк составляет %s.</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="108" />
+        <location filename="../../../translation_tools/translatables.py" line="117" />
         <source>one row occurs</source>
         <translation>Одна строка происходит</translation>
     </message>
@@ -1461,7 +1471,7 @@ of OpenSesame.
         <translation>дважды</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="114" />
+        <location filename="../../../translation_tools/translatables.py" line="103" />
         <source>Failed to generate preview.</source>
         <translation>Не удалось создать предварительный просмотр.</translation>
     </message>
@@ -1471,17 +1481,17 @@ of OpenSesame.
         <translation>никогда</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="117" />
+        <location filename="../../../translation_tools/translatables.py" line="113" />
         <source>Note: Order or repeat is unknown or variably defined</source>
         <translation>Примечание: Порядок или повторение неизвестны или определены переменными</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="103" />
+        <location filename="../../../translation_tools/translatables.py" line="111" />
         <source>All rows occur %s.</source>
         <translation>Все строки происходят %s.</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="107" />
+        <location filename="../../../translation_tools/translatables.py" line="115" />
         <source>Repeatedly runs another item</source>
         <translation>Повторно запускает другой элемент</translation>
     </message>
@@ -1489,62 +1499,62 @@ of OpenSesame.
 <context>
     <name>item_mouse_response</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="133" />
+        <location filename="../../../translation_tools/translatables.py" line="140" />
         <source>Leave empty to use "correct_response"</source>
         <translation>Оставьте пустым, чтобы использовать "correct_response"</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="130" />
+        <location filename="../../../translation_tools/translatables.py" line="132" />
         <source>Linked sketchpad</source>
         <translation />
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="137" />
+        <location filename="../../../translation_tools/translatables.py" line="133" />
         <source>Flush pending mouse clicks</source>
         <translation>Сброс ожидающих кликов мыши</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="138" />
+        <location filename="../../../translation_tools/translatables.py" line="134" />
         <source>Correct response</source>
         <translation>Правильный ответ</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="131" />
+        <location filename="../../../translation_tools/translatables.py" line="137" />
         <source>Allowed responses</source>
         <translation>Разрешенные ответы</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="135" />
+        <location filename="../../../translation_tools/translatables.py" line="131" />
         <source>Timeout</source>
         <translation>Таймаут</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="139" />
+        <location filename="../../../translation_tools/translatables.py" line="136" />
         <source>Elements define regions of interest</source>
         <translation>Элементы определяют области интереса</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="129" />
+        <location filename="../../../translation_tools/translatables.py" line="130" />
         <source>Collects mouse responses</source>
         <translation>Собирает ответы мыши</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="132" />
+        <location filename="../../../translation_tools/translatables.py" line="138" />
         <source>Visible mouse cursor</source>
         <translation>Видимый курсор мыши</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="136" />
+        <location filename="../../../translation_tools/translatables.py" line="135" />
         <source>In milliseconds or "infinite"</source>
         <translation>В миллисекундах или "бесконечно"</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="134" />
+        <location filename="../../../translation_tools/translatables.py" line="139" />
         <source>Event type</source>
         <translation>Тип события</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="140" />
+        <location filename="../../../translation_tools/translatables.py" line="129" />
         <source>Separated by semicolons, e.g. "left_button;right_button"</source>
         <translation>Разделено точками с запятой, например, "left_button;right_button"</translation>
     </message>
@@ -1552,67 +1562,67 @@ of OpenSesame.
 <context>
     <name>item_sampler</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="53" />
+        <location filename="../../../translation_tools/translatables.py" line="61" />
         <source>Sound file</source>
         <translation>Звуковой файл</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="52" />
+        <location filename="../../../translation_tools/translatables.py" line="57" />
         <source>Volume</source>
         <translation>Громкость</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="61" />
+        <location filename="../../../translation_tools/translatables.py" line="53" />
         <source> ms</source>
         <translation> мс</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="57" />
+        <location filename="../../../translation_tools/translatables.py" line="58" />
         <source>Panning</source>
         <translation>Панорамирование</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="50" />
+        <location filename="../../../translation_tools/translatables.py" line="55" />
         <source>Stop after</source>
         <translation>Остановиться после</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="58" />
+        <location filename="../../../translation_tools/translatables.py" line="51" />
         <source>Positive values toward the right; "left" or "right" for full panning</source>
         <translation>Положительные значения вправо; "left" или "right" для полного панорамирования</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="54" />
+        <location filename="../../../translation_tools/translatables.py" line="49" />
         <source>Pitch</source>
         <translation>Высота тона</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="49" />
+        <location filename="../../../translation_tools/translatables.py" line="52" />
         <source>In milliseconds, "sound", "keypress", or "mouseclick"</source>
         <translation>В миллисекундах, "sound", "keypress" или "mouseclick"</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="60" />
+        <location filename="../../../translation_tools/translatables.py" line="59" />
         <source>In .ogg or .wav format</source>
         <translation>В формате .ogg или .wav</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="59" />
+        <location filename="../../../translation_tools/translatables.py" line="54" />
         <source> x original</source>
         <translation> x оригинал</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="55" />
+        <location filename="../../../translation_tools/translatables.py" line="60" />
         <source>Fade in</source>
         <translation>Нараствание звука</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="51" />
+        <location filename="../../../translation_tools/translatables.py" line="56" />
         <source>Duration</source>
         <translation>Продолжительность</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="56" />
+        <location filename="../../../translation_tools/translatables.py" line="50" />
         <source>Plays a sound file in .wav or .ogg format</source>
         <translation>Воспроизводит звуковой файл в формате .wav или .ogg</translation>
     </message>
@@ -1620,7 +1630,7 @@ of OpenSesame.
 <context>
     <name>item_sequence</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="124" />
+        <location filename="../../../translation_tools/translatables.py" line="126" />
         <source>Sequence contains non-existing item: %s</source>
         <translation>Последовательность содержит несуществующий элемент: %s</translation>
     </message>
@@ -1630,7 +1640,7 @@ of OpenSesame.
         <translation>Запускает несколько элементов в последовательности</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="126" />
+        <location filename="../../../translation_tools/translatables.py" line="124" />
         <source>Flush pending key presses at sequence start</source>
         <translation>Сбросить ожидающие нажатия клавиш при начале последовательности</translation>
     </message>
@@ -1643,132 +1653,132 @@ of OpenSesame.
 <context>
     <name>item_sketchpad</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="81" />
+        <location filename="../../../translation_tools/translatables.py" line="91" />
         <source>Some properties of a noise patch are unknown or variably defined, using fallback image</source>
         <translation>Некоторые свойства шумового патча неизвестны или определены с переменными значениями, используя резервное изображение</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="85" />
+        <location filename="../../../translation_tools/translatables.py" line="84" />
         <source>Penwidth "%s" is unknown or variably defined, using 1</source>
         <translation>Ширина пера "%s" неизвестна или определена переменно, используется 1</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="74" />
+        <location filename="../../../translation_tools/translatables.py" line="90" />
         <source>Width "%s" is unknown or variably defined, using 100</source>
         <translation>Ширина "%s" неизвестна или определена с переменными значениями, используя 100</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="84" />
+        <location filename="../../../translation_tools/translatables.py" line="86" />
         <source>Enter text</source>
         <translation>Введите текст</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="79" />
+        <location filename="../../../translation_tools/translatables.py" line="89" />
         <source>Lower to bottom</source>
         <translation>Опустить на задний план</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="75" />
+        <location filename="../../../translation_tools/translatables.py" line="94" />
         <source>Please enter a text for the textline</source>
         <translation>Пожалуйста, введите текст для текстовой строки</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="72" />
+        <location filename="../../../translation_tools/translatables.py" line="87" />
         <source>Rotation "%s" is unknown or variably defined, using 0</source>
         <translation>Поворот "%s" неизвестен или определен переменно, используется 0</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="82" />
+        <location filename="../../../translation_tools/translatables.py" line="71" />
         <source>Proportion "%s" is unknown or variably defined, using .5</source>
         <translation>Пропорция "%s" неизвестна или определена с переменными значениями, используя .5</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="77" />
+        <location filename="../../../translation_tools/translatables.py" line="73" />
         <source>Color "%s" is unknown or variably defined, using placeholder color</source>
         <translation>Цвет "%s" неизвестен или определен переменно, используется цвет заполнителя</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="92" />
+        <location filename="../../../translation_tools/translatables.py" line="82" />
         <source>Y coordinate "%s" is unknown or variably defined, using display center</source>
         <translation>Координата Y "%s" неизвестна или определена переменно, используется центр экрана</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="93" />
+        <location filename="../../../translation_tools/translatables.py" line="85" />
         <source>Scale "%s" is unknown or variably defined, using 1</source>
         <translation>Масштаб "%s" неизвестен или определен переменно, используется 1</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="80" />
+        <location filename="../../../translation_tools/translatables.py" line="77" />
         <source>X coordinate "%s" is unknown or variably defined, using display center</source>
         <translation>Координата X "%s" неизвестна или определена переменно, используется центр экрана</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="78" />
+        <location filename="../../../translation_tools/translatables.py" line="95" />
         <source>Specify polar coordinates</source>
         <translation>Укажите полярные координаты</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="95" />
+        <location filename="../../../translation_tools/translatables.py" line="78" />
         <source>Fill "%s" is unknown or variably defined, assuming filled</source>
         <translation>Заливка "%s" неизвестна или определена переменно, предполагается заполненная</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="91" />
+        <location filename="../../../translation_tools/translatables.py" line="83" />
         <source>Delete</source>
         <translation>Удалить</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="73" />
+        <location filename="../../../translation_tools/translatables.py" line="72" />
         <source>Displays stimuli</source>
         <translation>Отображает стимулы</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="96" />
+        <location filename="../../../translation_tools/translatables.py" line="74" />
         <source>Height "%s" is unknown or variably defined, using 100</source>
         <translation>Высота "%s" неизвестна или определена с переменными значениями, используя 100</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="76" />
+        <location filename="../../../translation_tools/translatables.py" line="96" />
         <source>Element script</source>
         <translation>Элементный сценарий</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="86" />
+        <location filename="../../../translation_tools/translatables.py" line="76" />
         <source>Draw %s element</source>
         <translation>Нарисовать элемент %s</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="90" />
+        <location filename="../../../translation_tools/translatables.py" line="88" />
         <source>Fixdot style "%s" is unknown or variably defined</source>
         <translation>Стиль Fixdot "%s" неизвестен или определен с переменными значениями</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="94" />
+        <location filename="../../../translation_tools/translatables.py" line="93" />
         <source>Image name "%s" is unknown or variably defined, using fallback image</source>
         <translation>Имя изображения "%s" неизвестно или определено переменно, используется резервное изображение</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="89" />
+        <location filename="../../../translation_tools/translatables.py" line="75" />
         <source>Some properties of a Gabor patch are unknown or variably defined, using fallback image</source>
         <translation>Некоторые свойства патча Габора неизвестны или определены с переменными значениями, используя резервное изображение</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="71" />
+        <location filename="../../../translation_tools/translatables.py" line="79" />
         <source>Radius "%s" is unknown or variably defined, using 50</source>
         <translation>Радиус "%s" неизвестен или определен с переменными значениями, используя 50</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="83" />
+        <location filename="../../../translation_tools/translatables.py" line="80" />
         <source>Font size "%s" is invalid or variably defined, using 18</source>
         <translation>Размер шрифта "%s" недействителен или определен с переменными значениями, используя 18</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="87" />
+        <location filename="../../../translation_tools/translatables.py" line="81" />
         <source>Raise to front</source>
         <translation>Поднять на передний план</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="88" />
+        <location filename="../../../translation_tools/translatables.py" line="92" />
         <source>Edit script</source>
         <translation>Редактировать скрипт</translation>
     </message>
@@ -1776,47 +1786,47 @@ of OpenSesame.
 <context>
     <name>item_synth</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="40" />
+        <location filename="../../../translation_tools/translatables.py" line="34" />
         <source> x maximum</source>
         <translation> x максимум</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="37" />
+        <location filename="../../../translation_tools/translatables.py" line="42" />
         <source>Volume</source>
         <translation>Громкость</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="46" />
+        <location filename="../../../translation_tools/translatables.py" line="38" />
         <source> ms</source>
         <translation> мс</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="42" />
+        <location filename="../../../translation_tools/translatables.py" line="44" />
         <source>Panning</source>
         <translation>Панорамирование</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="34" />
+        <location filename="../../../translation_tools/translatables.py" line="35" />
         <source>Attack</source>
         <translation>Атака</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="44" />
+        <location filename="../../../translation_tools/translatables.py" line="36" />
         <source>Positive values toward the right; "left" or "right" for full panning</source>
         <translation>Положительные значения вправо; "left" или "right" для полного панорамирования</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="33" />
+        <location filename="../../../translation_tools/translatables.py" line="37" />
         <source>In milliseconds, "sound", "keypress", or "mouseclick"</source>
         <translation>В миллисекундах, "sound", "keypress" или "mouseclick"</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="39" />
+        <location filename="../../../translation_tools/translatables.py" line="33" />
         <source>Length</source>
         <translation>Длина</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="36" />
+        <location filename="../../../translation_tools/translatables.py" line="41" />
         <source>Duration</source>
         <translation>Продолжительность</translation>
     </message>
@@ -1826,22 +1836,22 @@ of OpenSesame.
         <translation>Распад</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="38" />
+        <location filename="../../../translation_tools/translatables.py" line="43" />
         <source>A basic sound synthesizer</source>
         <translation />
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="43" />
+        <location filename="../../../translation_tools/translatables.py" line="46" />
         <source>Waveform</source>
         <translation>Форма волны</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="41" />
+        <location filename="../../../translation_tools/translatables.py" line="39" />
         <source>In Hertz or as note, e.g. "A1"</source>
         <translation>В герцах или в виде ноты, например "A1"</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="35" />
+        <location filename="../../../translation_tools/translatables.py" line="40" />
         <source>Frequency</source>
         <translation>Частота</translation>
     </message>
@@ -1849,22 +1859,22 @@ of OpenSesame.
 <context>
     <name>plugin_advanced_delay</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="414" />
+        <location filename="../../../translation_tools/translatables.py" line="417" />
         <source>The average duration in milliseconds</source>
         <translation>Средняя продолжительность в миллисекундах</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="419" />
+        <location filename="../../../translation_tools/translatables.py" line="415" />
         <source> ms</source>
         <translation> мс</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="416" />
+        <location filename="../../../translation_tools/translatables.py" line="414" />
         <source>A random delay sampled from either a normal or uniform distribution</source>
         <translation>Случайная задержка, взятая из нормального или равномерного распределения</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="417" />
+        <location filename="../../../translation_tools/translatables.py" line="412" />
         <source>Jitter mode</source>
         <translation>Режим Джиттер</translation>
     </message>
@@ -1874,22 +1884,22 @@ of OpenSesame.
         <translation>Режим определения фактической продолжительности (см. Справку)</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="413" />
+        <location filename="../../../translation_tools/translatables.py" line="416" />
         <source>Duration</source>
         <translation>Продолжительность</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="415" />
+        <location filename="../../../translation_tools/translatables.py" line="419" />
         <source>The jitter of the actual duration in milliseconds (depends on Jitter mode)</source>
         <translation>Джиттер фактической продолжительности в миллисекундах (зависит от режима Джиттер)</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="411" />
+        <location filename="../../../translation_tools/translatables.py" line="413" />
         <source>Jitter</source>
         <translation>Джиттер</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="412" />
+        <location filename="../../../translation_tools/translatables.py" line="420" />
         <source>Flow control</source>
         <translation>Контроль потока</translation>
     </message>
@@ -1897,12 +1907,12 @@ of OpenSesame.
 <context>
     <name>plugin_coroutines</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="305" />
+        <location filename="../../../translation_tools/translatables.py" line="306" />
         <source>Run items simultaneously</source>
         <translation>Одновременный запуск элементов</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="306" />
+        <location filename="../../../translation_tools/translatables.py" line="307" />
         <source>Flow control</source>
         <translation>Контроль потока</translation>
     </message>
@@ -1920,7 +1930,7 @@ of OpenSesame.
         <translation>Редактировать скрипт для изменения формы</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="406" />
+        <location filename="../../../translation_tools/translatables.py" line="409" />
         <source>A generic form plug-in</source>
         <translation>Универсальный плагин для форм</translation>
     </message>
@@ -1928,32 +1938,32 @@ of OpenSesame.
 <context>
     <name>plugin_form_consent</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="369" />
+        <location filename="../../../translation_tools/translatables.py" line="365" />
         <source>Text to display in the form body</source>
         <translation>Текст для отображения в теле формы</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="363" />
+        <location filename="../../../translation_tools/translatables.py" line="371" />
         <source>Decline-button text</source>
         <translation>Текст кнопки отказа</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="364" />
+        <location filename="../../../translation_tools/translatables.py" line="369" />
         <source>Text for the decline button</source>
         <translation>Текст для кнопки отказа</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="361" />
+        <location filename="../../../translation_tools/translatables.py" line="358" />
         <source>Title to appear above the form text</source>
         <translation>Заголовок, который будет отображаться над текстом формы</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="357" />
+        <location filename="../../../translation_tools/translatables.py" line="368" />
         <source>A simple consent form</source>
         <translation>Простая форма согласия</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="365" />
+        <location filename="../../../translation_tools/translatables.py" line="366" />
         <source>Form title</source>
         <translation>Заголовок формы</translation>
     </message>
@@ -1963,37 +1973,37 @@ of OpenSesame.
         <translation>Текст кнопки принятия</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="360" />
+        <location filename="../../../translation_tools/translatables.py" line="363" />
         <source>Message on decline</source>
         <translation>Сообщение при отказе</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="358" />
+        <location filename="../../../translation_tools/translatables.py" line="359" />
         <source>Text for the accept button</source>
         <translation>Текст для кнопки принятия</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="368" />
+        <location filename="../../../translation_tools/translatables.py" line="361" />
         <source>Checkbox text</source>
         <translation>Текст флажка</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="367" />
+        <location filename="../../../translation_tools/translatables.py" line="370" />
         <source>Consent form text</source>
         <translation>Текст формы согласия</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="370" />
+        <location filename="../../../translation_tools/translatables.py" line="360" />
         <source>Form</source>
         <translation>форма</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="359" />
+        <location filename="../../../translation_tools/translatables.py" line="364" />
         <source>A message shown when the participant declines</source>
         <translation>Сообщение, показываемое при отказе участника</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="366" />
+        <location filename="../../../translation_tools/translatables.py" line="367" />
         <source>Text for the checkbox</source>
         <translation>Текст флажка</translation>
     </message>
@@ -2001,27 +2011,27 @@ of OpenSesame.
 <context>
     <name>plugin_form_multiple_choice</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="384" />
+        <location filename="../../../translation_tools/translatables.py" line="390" />
         <source>A simple multiple choice item</source>
         <translation>Простой пункт с множественным выбором</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="392" />
+        <location filename="../../../translation_tools/translatables.py" line="391" />
         <source>Form title</source>
         <translation>Заголовок формы</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="393" />
+        <location filename="../../../translation_tools/translatables.py" line="385" />
         <source>Response options</source>
         <translation>Варианты ответов</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="385" />
+        <location filename="../../../translation_tools/translatables.py" line="396" />
         <source>Response variable</source>
         <translation>Параметр ответа</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="387" />
+        <location filename="../../../translation_tools/translatables.py" line="393" />
         <source>Response options (different options on different lines)</source>
         <translation>Варианты ответов</translation>
     </message>
@@ -2031,37 +2041,37 @@ of OpenSesame.
         <translation>Ваш вопрос</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="391" />
+        <location filename="../../../translation_tools/translatables.py" line="394" />
         <source>Response timeout</source>
         <translation>Время ответа истекло</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="394" />
+        <location filename="../../../translation_tools/translatables.py" line="384" />
         <source>Button text</source>
         <translation>Текст кнопки</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="390" />
+        <location filename="../../../translation_tools/translatables.py" line="395" />
         <source>Text for the button to advance to the next item</source>
         <translation>Следующий</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="389" />
+        <location filename="../../../translation_tools/translatables.py" line="387" />
         <source>Allow multiple options to be selected</source>
         <translation>Разрешить выбор нескольких вариантов</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="388" />
+        <location filename="../../../translation_tools/translatables.py" line="389" />
         <source>Timeout</source>
         <translation>Таймаут</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="395" />
+        <location filename="../../../translation_tools/translatables.py" line="388" />
         <source>Form</source>
         <translation>форма</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="383" />
+        <location filename="../../../translation_tools/translatables.py" line="392" />
         <source>Advance immediately to the next item once a selection has been made</source>
         <translation>Перейти немедленно к следующему элементу после выбора</translation>
     </message>
@@ -2069,42 +2079,42 @@ of OpenSesame.
 <context>
     <name>plugin_form_text_display</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="375" />
+        <location filename="../../../translation_tools/translatables.py" line="377" />
         <source>Ok-button text</source>
         <translation>ОК-Текст кнопки</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="377" />
+        <location filename="../../../translation_tools/translatables.py" line="381" />
         <source>Main form text</source>
         <translation>Главный текст формы</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="378" />
+        <location filename="../../../translation_tools/translatables.py" line="376" />
         <source>Text for the Ok button</source>
         <translation>ОК</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="379" />
+        <location filename="../../../translation_tools/translatables.py" line="378" />
         <source>Text to display in the form body</source>
         <translation>Текст для отображения в теле формы</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="373" />
+        <location filename="../../../translation_tools/translatables.py" line="374" />
         <source>Title to appear above the form text</source>
         <translation>Заголовок, который будет отображаться над текстом формы</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="376" />
+        <location filename="../../../translation_tools/translatables.py" line="379" />
         <source>Form title</source>
         <translation>Заголовок формы</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="374" />
+        <location filename="../../../translation_tools/translatables.py" line="380" />
         <source>A simple text display form</source>
         <translation>Простая форма отображения текста</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="380" />
+        <location filename="../../../translation_tools/translatables.py" line="375" />
         <source>Form</source>
         <translation>форма</translation>
     </message>
@@ -2112,52 +2122,52 @@ of OpenSesame.
 <context>
     <name>plugin_form_text_input</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="452" />
+        <location filename="../../../translation_tools/translatables.py" line="449" />
         <source>Title to appear above the form text</source>
         <translation>Заголовок, который будет отображаться над текстом формы</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="455" />
+        <location filename="../../../translation_tools/translatables.py" line="454" />
         <source>Form title</source>
         <translation>Заголовок формы</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="454" />
+        <location filename="../../../translation_tools/translatables.py" line="457" />
         <source>The experimental variable to save the response in</source>
         <translation>Экспериментальная переменная для сохранения ответа</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="448" />
+        <location filename="../../../translation_tools/translatables.py" line="458" />
         <source>Response variable</source>
         <translation>Параметр ответа</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="449" />
+        <location filename="../../../translation_tools/translatables.py" line="450" />
         <source>Your question</source>
         <translation>Ваш вопрос</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="456" />
+        <location filename="../../../translation_tools/translatables.py" line="453" />
         <source>A simple text input form</source>
         <translation>Простая форма ввода текста</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="450" />
+        <location filename="../../../translation_tools/translatables.py" line="455" />
         <source>A question text</source>
         <translation>Текст вопроса</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="453" />
+        <location filename="../../../translation_tools/translatables.py" line="456" />
         <source>A response timeout</source>
         <translation>Время ответа истекло</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="451" />
+        <location filename="../../../translation_tools/translatables.py" line="452" />
         <source>Timeout</source>
         <translation>Таймаут</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="457" />
+        <location filename="../../../translation_tools/translatables.py" line="451" />
         <source>Form</source>
         <translation>форма</translation>
     </message>
@@ -2165,57 +2175,57 @@ of OpenSesame.
 <context>
     <name>plugin_joystick</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="442" />
+        <location filename="../../../translation_tools/translatables.py" line="437" />
         <source>Identifies the joystick, in case there are multiple joysticks</source>
         <translation>Определяет джойстик, если имеется несколько джойстиков</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="440" />
+        <location filename="../../../translation_tools/translatables.py" line="442" />
         <source>Expecting a comma-separated list of numbers between 1 and the number of joybuttons</source>
         <translation>Ожидает список чисел, разделенных запятыми, между 1 и количеством joybuttons</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="445" />
+        <location filename="../../../translation_tools/translatables.py" line="439" />
         <source>Enable dummy mode to test the experiment using a keyboard</source>
         <translation>Включить режим-макета для тестирования эксперимента с помощью клавиатуры</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="439" />
+        <location filename="../../../translation_tools/translatables.py" line="445" />
         <source>Collects input from a joystick or gamepad</source>
         <translation>Собирает ввод с джойстика или геймпада</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="435" />
+        <location filename="../../../translation_tools/translatables.py" line="436" />
         <source>Device nr.</source>
         <translation>Номер устройства</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="443" />
+        <location filename="../../../translation_tools/translatables.py" line="440" />
         <source>Expecting a value in milliseconds of 'infinite'</source>
         <translation>Ожидается значение в миллисекундах 'бесконечность'</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="437" />
+        <location filename="../../../translation_tools/translatables.py" line="444" />
         <source>Allowed responses</source>
         <translation>Разрешенные ответы</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="441" />
+        <location filename="../../../translation_tools/translatables.py" line="438" />
         <source>Timeout</source>
         <translation>Таймаут</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="436" />
+        <location filename="../../../translation_tools/translatables.py" line="446" />
         <source>Response collection</source>
         <translation>Сбор ответов</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="438" />
+        <location filename="../../../translation_tools/translatables.py" line="443" />
         <source>Dummy mode (use keyboard instead of joystick)</source>
         <translation>Режим-макет (используйте клавиатуру вместо джойстика)</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="444" />
+        <location filename="../../../translation_tools/translatables.py" line="441" />
         <source>Correct response</source>
         <translation>Правильный ответ</translation>
     </message>
@@ -2228,7 +2238,7 @@ of OpenSesame.
         <translation>Простая записная книжка для документирования вашего эксперимента. Этот плагин ничего не делает.</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="429" />
+        <location filename="../../../translation_tools/translatables.py" line="433" />
         <source>None</source>
         <translation>Нет</translation>
     </message>
@@ -2238,12 +2248,12 @@ of OpenSesame.
         <translation>Разное</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="431" />
+        <location filename="../../../translation_tools/translatables.py" line="429" />
         <source>Note</source>
         <translation>Заметка</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="427" />
+        <location filename="../../../translation_tools/translatables.py" line="431" />
         <source>Type your note here</source>
         <translation>Введите вашу заметку здесь</translation>
     </message>
@@ -2251,97 +2261,97 @@ of OpenSesame.
 <context>
     <name>plugin_quest_staircase_init</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="461" />
+        <location filename="../../../translation_tools/translatables.py" line="463" />
         <source>Name</source>
         <translation>Имя</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="471" />
+        <location filename="../../../translation_tools/translatables.py" line="461" />
         <source>Initializes a new Quest staircase procedure</source>
         <translation>Инициализация новой лестничной процедуры Quest</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="478" />
+        <location filename="../../../translation_tools/translatables.py" line="473" />
         <source>β</source>
         <translation>β</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="470" />
+        <location filename="../../../translation_tools/translatables.py" line="465" />
         <source>Estimated threshold</source>
         <translation>Оценка порога</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="466" />
+        <location filename="../../../translation_tools/translatables.py" line="464" />
         <source>Staircase</source>
         <translation>Лестница</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="467" />
+        <location filename="../../../translation_tools/translatables.py" line="466" />
         <source>Use different names to run multiple independent Quest procedures</source>
         <translation>Используйте разные имена для запуска нескольких независимых процедур Quest</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="473" />
+        <location filename="../../../translation_tools/translatables.py" line="476" />
         <source>Std. dev. of estimated threshold</source>
         <translation>Стандартное отклонение оценки порога</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="472" />
+        <location filename="../../../translation_tools/translatables.py" line="478" />
         <source>Minimum test value</source>
         <translation>Минимальное значение теста</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="476" />
+        <location filename="../../../translation_tools/translatables.py" line="474" />
         <source>Used for initial test value</source>
         <translation>Используется для начального тестового значения</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="465" />
+        <location filename="../../../translation_tools/translatables.py" line="475" />
         <source>Proportion of random responses at maximum stimulus intensity</source>
         <translation>Доля случайных ответов при максимальной интенсивности раздражителя</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="469" />
+        <location filename="../../../translation_tools/translatables.py" line="467" />
         <source>Desired proportion of correct responses</source>
         <translation>Желаемая доля правильных ответов</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="463" />
+        <location filename="../../../translation_tools/translatables.py" line="477" />
         <source>Experimental variable for test value</source>
         <translation>Экспериментальная переменная для тестового значения</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="464" />
+        <location filename="../../../translation_tools/translatables.py" line="469" />
         <source>Maximum test value</source>
         <translation>Максимальное значение теста</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="462" />
+        <location filename="../../../translation_tools/translatables.py" line="472" />
         <source>Steepness of the Weibull psychometric function</source>
         <translation>Крутизна психометрической функции Вейбулла</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="468" />
+        <location filename="../../../translation_tools/translatables.py" line="471" />
         <source>Method to determine optimal test value</source>
         <translation>Метод определения оптимального тестового значения</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="460" />
+        <location filename="../../../translation_tools/translatables.py" line="462" />
         <source>Target</source>
         <translation>Цель</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="475" />
+        <location filename="../../../translation_tools/translatables.py" line="479" />
         <source>Method</source>
         <translation>Метод</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="477" />
+        <location filename="../../../translation_tools/translatables.py" line="468" />
         <source>Chance level (γ)</source>
         <translation>Уровень случайности (γ)</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="474" />
+        <location filename="../../../translation_tools/translatables.py" line="470" />
         <source>δ</source>
         <translation>δ</translation>
     </message>
@@ -2349,32 +2359,32 @@ of OpenSesame.
 <context>
     <name>plugin_quest_staircase_next</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="398" />
+        <location filename="../../../translation_tools/translatables.py" line="403" />
         <source>Staircase</source>
         <translation>Лестница</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="401" />
+        <location filename="../../../translation_tools/translatables.py" line="399" />
         <source>Updates the Quest test value based on a response</source>
         <translation>Обновление значения теста Quest на основе ответа</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="402" />
+        <location filename="../../../translation_tools/translatables.py" line="401" />
         <source>Should match a name specified in a quest_staircase_init</source>
         <translation>Должно соответствовать имени, указанному в quest_staircase_init</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="403" />
+        <location filename="../../../translation_tools/translatables.py" line="400" />
         <source>Responses should be coded as 0 (incorrect) or 1 (correct)</source>
         <translation>Ответы должны быть закодированы как 0 (неправильно) или 1 (правильно)</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="399" />
+        <location filename="../../../translation_tools/translatables.py" line="404" />
         <source>Response variable</source>
         <translation>Параметр ответа</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="400" />
+        <location filename="../../../translation_tools/translatables.py" line="402" />
         <source>Name</source>
         <translation>Имя</translation>
     </message>
@@ -2382,7 +2392,7 @@ of OpenSesame.
 <context>
     <name>plugin_repeat_cycle</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="351" />
+        <location filename="../../../translation_tools/translatables.py" line="352" />
         <source>Repeat if</source>
         <translation>Повторять, если</translation>
     </message>
@@ -2397,7 +2407,7 @@ of OpenSesame.
         <translation>Повторять цикл из цикла по желанию</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="352" />
+        <location filename="../../../translation_tools/translatables.py" line="355" />
         <source>Flow control</source>
         <translation>Контроль потока</translation>
     </message>
@@ -2405,17 +2415,17 @@ of OpenSesame.
 <context>
     <name>plugin_reset_feedback</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="423" />
+        <location filename="../../../translation_tools/translatables.py" line="424" />
         <source>Response collection</source>
         <translation>Сбор ответов</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="424" />
+        <location filename="../../../translation_tools/translatables.py" line="425" />
         <source>This plug-in has no settings</source>
         <translation>У этого плагина нет настроек</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="422" />
+        <location filename="../../../translation_tools/translatables.py" line="423" />
         <source>A very simple plug-in to reset feedback variables</source>
         <translation>Очень простой плагин для сброса переменных обратной связи</translation>
     </message>
@@ -2423,12 +2433,12 @@ of OpenSesame.
 <context>
     <name>plugin_srbox</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="326" />
+        <location filename="../../../translation_tools/translatables.py" line="331" />
         <source>Expecting a value in milliseconds or 'infinite'</source>
         <translation>Ожидается значение в миллисекундах или 'бесконечность'</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="332" />
+        <location filename="../../../translation_tools/translatables.py" line="324" />
         <source>Correct response</source>
         <translation>Правильный ответ</translation>
     </message>
@@ -2438,74 +2448,74 @@ of OpenSesame.
         <translation>Ожидается допустимое имя устройства. Оставьте пустым для автоопределения.</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="324" />
+        <location filename="../../../translation_tools/translatables.py" line="332" />
         <source>Expecting a semicolon-separated list of button numbers, e.g., 1;3;4</source>
         <translation>Ожидается список номеров кнопок, разделенных точкой с запятой, например, 1;3;4</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="329" />
+        <location filename="../../../translation_tools/translatables.py" line="325" />
         <source>Ignore buttons that are already pressed</source>
         <translation>Игнорировать уже нажатые кнопки</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="323" />
+        <location filename="../../../translation_tools/translatables.py" line="320" />
         <source>Dummy mode (use keyboard instead)</source>
         <translation>Режим макета (используйте клавиатуру вместо)</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="334" />
+        <location filename="../../../translation_tools/translatables.py" line="328" />
         <source>Device name</source>
         <translation>Имя устройства</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="331" />
+        <location filename="../../../translation_tools/translatables.py" line="319" />
         <source>Expecting a button number (1 .. 5)</source>
         <translation>Ожидается номер кнопки (1 .. 5)</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="319" />
+        <location filename="../../../translation_tools/translatables.py" line="333" />
         <source>Allowed responses</source>
         <translation>Разрешенные ответы</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="320" />
+        <location filename="../../../translation_tools/translatables.py" line="329" />
         <source>&lt;small&gt;&lt;b&gt;Note:&lt;/b&gt; If there are multiple srbox items in the experiment, the first srbox item determines the device name and whether dummy mode is enabled&lt;/small&gt;
 </source>
         <translation>&lt;small&gt;&lt;b&gt;Примечание:&lt;/b&gt; Если в эксперименте есть несколько элементов srbox, первый элемент srbox определяет имя устройства и включен ли режим макета&lt;/small&gt;
 </translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="328" />
+        <location filename="../../../translation_tools/translatables.py" line="326" />
         <source>Require a button-state change, so that already-pressed buttons are ignored</source>
         <translation>Требуется изменение состояния кнопки, чтобы уже нажатые кнопки были проигнорированы</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="325" />
+        <location filename="../../../translation_tools/translatables.py" line="322" />
         <source>Timeout</source>
         <translation>Таймаут</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="330" />
+        <location filename="../../../translation_tools/translatables.py" line="321" />
         <source>Enable to respond with the keyboard instead of an SR Box</source>
         <translation>Включить возможность отвечать с помощью клавиатуры вместо SR Box</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="333" />
+        <location filename="../../../translation_tools/translatables.py" line="323" />
         <source>Turn on lights</source>
         <translation>Включить свет</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="318" />
+        <location filename="../../../translation_tools/translatables.py" line="335" />
         <source>Response collection</source>
         <translation>Сбор ответов</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="322" />
+        <location filename="../../../translation_tools/translatables.py" line="334" />
         <source>Expecting a semicolon-separated list of light numbers, e.g., 1;3;4</source>
         <translation>Ожидается список номеров света, разделенных точкой с запятой, например, 1;3;4</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="321" />
+        <location filename="../../../translation_tools/translatables.py" line="330" />
         <source>A plug-in for using the serial response box.</source>
         <translation>Плагин для использования серийного ответного блока.</translation>
     </message>
@@ -2513,62 +2523,62 @@ of OpenSesame.
 <context>
     <name>plugin_touch_response</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="337" />
+        <location filename="../../../translation_tools/translatables.py" line="338" />
         <source>Specifies the number of rows</source>
         <translation>Указывает количество строк</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="343" />
+        <location filename="../../../translation_tools/translatables.py" line="344" />
         <source>Expecting a value in milliseconds or 'infinite'</source>
         <translation>Ожидается значение в миллисекундах или 'бесконечность'</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="347" />
+        <location filename="../../../translation_tools/translatables.py" line="343" />
         <source>Show a mouse cursor (if supported on device)</source>
         <translation>Показать курсор мыши (если поддерживается на устройстве)</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="339" />
+        <location filename="../../../translation_tools/translatables.py" line="348" />
         <source>Number of columns</source>
         <translation>Количество столбцов</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="342" />
+        <location filename="../../../translation_tools/translatables.py" line="340" />
         <source>A grid-based response item, convenient for touch screens</source>
         <translation>Сеточный элемент ответа, удобный для сенсорных экранов</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="345" />
+        <location filename="../../../translation_tools/translatables.py" line="347" />
         <source>Number of rows</source>
         <translation>Количество строк</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="346" />
+        <location filename="../../../translation_tools/translatables.py" line="345" />
         <source>Show cursor</source>
         <translation>Показать курсор</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="341" />
+        <location filename="../../../translation_tools/translatables.py" line="339" />
         <source>Timeout</source>
         <translation>Таймаут</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="344" />
+        <location filename="../../../translation_tools/translatables.py" line="346" />
         <source>Set the correct response</source>
         <translation>Установить правильный ответ</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="338" />
+        <location filename="../../../translation_tools/translatables.py" line="349" />
         <source>Response collection</source>
         <translation>Сбор ответов</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="340" />
+        <location filename="../../../translation_tools/translatables.py" line="342" />
         <source>Specifies the number of columns</source>
         <translation>Указывает количество столбцов</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="348" />
+        <location filename="../../../translation_tools/translatables.py" line="341" />
         <source>Correct response</source>
         <translation>Правильный ответ</translation>
     </message>
@@ -2576,37 +2586,37 @@ of OpenSesame.
 <context>
     <name>plugins_coroutines</name>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="313" />
+        <location filename="../../../translation_tools/translatables.py" line="312" />
         <source>"%s" does not support coroutines.</source>
         <translation />
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="314" />
+        <location filename="../../../translation_tools/translatables.py" line="315" />
         <source>End after item (optional)</source>
         <translation>Окончание после элемента (необязательно)</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="311" />
+        <location filename="../../../translation_tools/translatables.py" line="310" />
         <source>Item name</source>
         <translation>Наименование элемента</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="310" />
+        <location filename="../../../translation_tools/translatables.py" line="313" />
         <source>Duration</source>
         <translation>Продолжительность</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="315" />
+        <location filename="../../../translation_tools/translatables.py" line="316" />
         <source>End time (if applicable)</source>
         <translation>Время окончания (если применимо)</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="309" />
+        <location filename="../../../translation_tools/translatables.py" line="311" />
         <source>Start time</source>
         <translation>Время начала</translation>
     </message>
     <message>
-        <location filename="../../../translation_tools/translatables.py" line="312" />
+        <location filename="../../../translation_tools/translatables.py" line="314" />
         <source>Flush pending key presses at coroutines start</source>
         <translation />
     </message>
