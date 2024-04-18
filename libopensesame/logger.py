@@ -19,6 +19,7 @@ along with OpenSesame.  If not, see <http://www.gnu.org/licenses/>.
 from libopensesame.py3compat import *
 from libopensesame.item import Item
 import fnmatch
+from libopensesame.oslogging import oslogger
 from libopensesame.exceptions import InvalidOpenSesameScript
 
 
@@ -33,6 +34,18 @@ class Logger(Item):
         self._logvars = None
         self.var.auto_log = 'yes'
         self.exclude_patterns = []
+        self._exclude_vars = []
+        
+    def _is_excluded(self, var):
+        if var in self._logvars:
+            return False
+        if var in self._exclude_vars:
+            return True
+        for pattern in self.exclude_patterns:
+            if fnmatch.fnmatch(var, pattern):
+                self._exclude_vars.append(var)
+                return True
+        return False
 
     def run(self):
         self.set_item_onset()
@@ -42,16 +55,18 @@ class Logger(Item):
             else:
                 self._logvars = []
             for var in self.logvars:
-                if var not in self._logvars:
+                if var not in self._logvars and not self._is_excluded(var):
                     self._logvars.append(var)
-            excludes = set()
-            for pattern in self.exclude_patterns:
-                for var in self._logvars:
-                    if fnmatch.fnmatch(var, pattern):
-                        excludes.add(var)
-            for exclude in excludes:
-                self._logvars.remove(exclude)
             self._logvars.sort()
+        # If we are automatically logging all variables, emit a warning when
+        # a new variable was created after the first logger call, because it
+        # will not be logged in that case.
+        elif self.var.auto_log == 'yes':
+            for var in self.experiment.log.all_vars():
+                if var not in self._logvars and not self._is_excluded(var):
+                    oslogger.warning(
+                        f'the variable {var} was created after the first '
+                        f'logger call and will therefore not be logged.')
         self.experiment.log.write_vars(self._logvars)
 
     def coroutine(self, coroutines):
