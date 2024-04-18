@@ -32,7 +32,8 @@ _ = translation_context(u'help', category=u'extension')
 class ActionPage(QtWidgets.QAction, BaseSubcomponent):
 
     r"""A menu entry for a single help page."""
-    def __init__(self, main_window, title, link, menu):
+    def __init__(self, main_window, title, link, menu,
+                 icon='applications-internet'):
         r"""Constructor.
 
         Parameters
@@ -47,7 +48,7 @@ class ActionPage(QtWidgets.QAction, BaseSubcomponent):
             The menu for the action.
         """
         QtWidgets.QAction.__init__(
-            self, main_window.theme.qicon(u'applications-internet'),
+            self, main_window.theme.qicon(icon),
             title,
             menu
         )
@@ -140,6 +141,10 @@ class Help(BaseExtension):
             if menu is not None:
                 self.action_psychopy_help = self.menu.addMenu(menu)
         self.menu.addSeparator()
+        self.menu.addAction(ActionPage(self.main_window,
+                                       _('Sigmund AI assistant'),
+                                       'https://sigmundai.eu', self.menu,
+                                       icon='face-smile'))
 
     def build_menu(self, parent_menu, base_url, title, _dict, sub_menu=True):
         r"""A helper function to build the online-help menu.
