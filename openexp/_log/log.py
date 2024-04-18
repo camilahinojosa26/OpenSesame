@@ -70,16 +70,15 @@ class Log:
         returns:
                 A list of all variables that exist in the experiment.
         """
-        if self._all_vars is None:
-            self._all_vars = []
-            for key in self.experiment.var.inspect().keys():
-                try:
-                    key = self.experiment.syntax.eval_text(key)
-                except Exception:
-                    oslogger.warning(f'cannot evaluate variable name {key}')
-                else:
-                    self._all_vars.append(key)
-        return self._all_vars
+        all_vars = []
+        for key in self.experiment.var.inspect().keys():
+            try:
+                key = self.experiment.syntax.eval_text(key)
+            except Exception:
+                oslogger.warning(f'cannot evaluate variable name {key}')
+            else:
+                all_vars.append(key)
+        return all_vars
 
     def open(self, path):
         r"""Opens the current log. If a log was already open, it is closed
