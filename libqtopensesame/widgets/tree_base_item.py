@@ -60,20 +60,16 @@ class TreeBaseItem(BaseSubcomponent, QtWidgets.QTreeWidgetItem):
 
         pass
 
-    def create_linked_copy(self):
-
-        pass
-
-    def create_unlinked_copy(self):
-
-        pass
-
     def copy_linked(self):
 
         pass
 
     def copy_unlinked(self):
 
+        pass
+    
+    def copy_shallow(self):
+        
         pass
 
     def delete(self):

@@ -225,16 +225,18 @@ class TreeItemItem(TreeBaseItem):
         except Exception as e:
             pass
 
-    def copy_unlinked(self):
-        """Copies a snippet of the current item plus children to the keyboard.
+    def copy_unlinked(self, include_children=True):
+        """Copies a snippet of the current item plus children to the clipboard.
         """
         import json
 
         data = {'type': 'item-snippet',
                 'main-item-name': self.item.name,
                 'items': []}
-        for item_name in [self.item.name] \
-                + self.experiment.items[self.item.name].children():
+        item_names = [self.item.name]
+        if include_children:
+            item_names += self.experiment.items[self.item.name].children()
+        for item_name in item_names:
             # Don't create multiple linked copies of the same object. This
             # avoids for example, a sequence with two copies of the same item
             # from being copied as a sequence with two disconnected items. In
@@ -253,11 +255,11 @@ class TreeItemItem(TreeBaseItem):
         QtWidgets.QApplication.clipboard().setText(text)
 
     def copy_linked(self):
-        """Copies a linked copy to the keyboard"""
+        """Copies a linked copy to the clipboard"""
         import json
 
         data = {
-            'type': 'item-existing',
+            'type': 'item-snippet',
             'item-name': self.item.name,
             'item-type': self.item.item_type,
             'move': False,
@@ -267,6 +269,12 @@ class TreeItemItem(TreeBaseItem):
         }
         text = safe_decode(json.dumps(data))
         QtWidgets.QApplication.clipboard().setText(text)
+        
+    def copy_shallow(self):
+        """Copies a snippet of the current item to the clipboard. Children
+        remain linked.
+        """
+        self.copy_unlinked(include_children=False)
 
     def paste(self):
         """Pastes clipboard data onto the current item, if possible."""
