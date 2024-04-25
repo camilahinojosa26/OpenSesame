@@ -259,7 +259,7 @@ class TreeItemItem(TreeBaseItem):
         import json
 
         data = {
-            'type': 'item-snippet',
+            'type': 'item-existing',
             'item-name': self.item.name,
             'item-type': self.item.item_type,
             'move': False,
