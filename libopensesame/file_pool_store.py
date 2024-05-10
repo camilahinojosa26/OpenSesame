@@ -23,7 +23,9 @@ from libopensesame.exceptions import InvalidValue
 import tempfile
 import os
 import sys
+import glob
 import shutil
+import psutil
 
 
 class FilePoolStore:
@@ -70,7 +72,7 @@ class FilePoolStore:
     [TOC]
     """
     def __init__(self, experiment, folder=None):
-        r"""Constructor.
+        """Constructor.
 
         Parameters
         ----------
@@ -82,32 +84,40 @@ class FilePoolStore:
         """
         self.experiment = experiment
         if folder is None:
-            # On some systems tempfile.mkdtemp() triggers a UnicodeDecodeError.
-            # This is resolved by passing the dir explicitly as a Unicode
-            # string. This fix has been adapted from:
-            # - <http://bugs.python.org/issue1681974>
-            self.__folder__ = tempfile.mkdtemp(
-                suffix='.opensesame_pool',
-                dir=safe_decode(
-                    tempfile.gettempdir(),
-                    enc=sys.getfilesystemencoding()
-                )
-            )
-            oslogger.debug('creating new pool folder')
+            process_id = os.getpid()
+            folder_suffix = f".opensesame_pool_{process_id}"
+            self.__folder__ = tempfile.mkdtemp(suffix=folder_suffix)
+            oslogger.debug(f'creating new pool folder: {folder_suffix}')
         else:
             oslogger.debug('reusing existing pool folder')
             self.__folder__ = folder
-        oslogger.debug('pool folder is \'%s\'' % self.__folder__)
+        oslogger.debug(f'pool folder is {self.__folder__}')
 
     def clean_up(self):
-        r"""Removes the pool folder."""
+        """Removes the pool folder."""
         try:
             shutil.rmtree(self.__folder__)
         except Exception:
             oslogger.error('Failed to remove %s' % self.__folder__)
-
+            
+    def clean_up_leftover_folders(self):
+        """Removes all pool folders that do not belong to any currently 
+        running process.
+        """
+        current_process_ids = {proc.pid for proc in psutil.process_iter()}
+        pattern = os.path.join(tempfile.gettempdir(), "*opensesame_pool_*")
+        for folder in glob.glob(pattern):
+            try:
+                folder_process_id = int(folder.split('_')[-1])
+                if folder_process_id not in current_process_ids:
+                    os.rmdir(folder)
+                    oslogger.debug(f'deleted leftover folder: {folder}')
+            except ValueError:
+                oslogger.error(
+                    f'unexpected folder name format, skipping {folder}')
+                
     def __contains__(self, path):
-        r"""Checks if a file is in the file pool.
+        """Checks if a file is in the file pool.
 
         Returns
         -------
@@ -119,7 +129,7 @@ class FilePoolStore:
         return os.path.exists(self[path])
 
     def __delitem__(self, path):
-        r"""Deletes a file from the file pool.
+        """Deletes a file from the file pool.
 
         Parameters
         ----------
@@ -183,7 +193,7 @@ class FilePoolStore:
         return len(os.listdir(self.folder()))
 
     def add(self, path, new_name=None):
-        r"""Copies a file to the file pool.
+        """Copies a file to the file pool.
 
         Parameters
         ----------
@@ -202,7 +212,7 @@ class FilePoolStore:
         shutil.copyfile(path, os.path.join(self.folder(), new_name))
 
     def files(self):
-        r"""Returns all files in the file pool.
+        """Returns all files in the file pool.
 
         Returns
         -------
@@ -248,7 +258,7 @@ class FilePoolStore:
         return _folders[-1]
 
     def folder(self):
-        r"""Gives the full path to the (main) pool folder. This is typically a
+        """Gives the full path to the (main) pool folder. This is typically a
         temporary folder that is deleted when the experiment is finished.
 
         Returns
@@ -266,7 +276,7 @@ class FilePoolStore:
         return self.__folder__
 
     def in_folder(self, path):
-        r"""Checks whether path is in the pool folder. This is different from
+        """Checks whether path is in the pool folder. This is different from
         the `path in pool` syntax in that it only checks the main pool folder,
         and not the fallback pool folder and experiment folder.
 
@@ -287,7 +297,7 @@ class FilePoolStore:
 
     def folders(self, include_fallback_folder=True,
                 include_experiment_path=False):
-        r"""Gives a list of all folders that are searched when retrieving the
+        """Gives a list of all folders that are searched when retrieving the
         full path to a file. These are (in order):
 
         1. The file pool folder
@@ -330,7 +340,7 @@ class FilePoolStore:
         return _folders
 
     def rename(self, old_path, new_path):
-        r"""Renames a file in the pool folder.
+        """Renames a file in the pool folder.
 
         Parameters
         ----------
