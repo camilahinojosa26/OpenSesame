@@ -174,6 +174,7 @@ class QtOpenSesame(QtWidgets.QMainWindow, BaseComponent):
         # Create the initial experiment, which is the default template.
         with safe_open(resources['templates/default.osexp'], 'r') as fd:
             self.experiment = Experiment(self, 'New experiment', fd.read())
+        self.experiment.pool.clean_up_leftover_folders()
         self.experiment.build_item_tree()
         self.ui.itemtree.default_fold_state()
         # Miscellaneous initialization
