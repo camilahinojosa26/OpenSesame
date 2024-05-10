@@ -139,12 +139,18 @@ class PluginManager:
         self._pkg = pkg
         self._aliases = {}
         self.sub_packages = []
+        i = 0
         for importer, name, ispkg in pkgutil.iter_modules(
                 pkg.__path__, prefix=pkg.__name__ + '.'):
             if not ispkg:
                 continue
             oslogger.debug(f'found plugin package {name} in {importer.path}')
             self._discover_subpkg(name)
+            i += 1
+        if not i:
+            oslogger.warning(f'no plugins found in {pkg.__path__}')
+        else:
+            oslogger.debug(f'{i} plugins found in {importer.path}')
         self._discover_oldstyle()
         # Sort all plugins by their priority, such that high priority values
         # come first
