@@ -60,7 +60,7 @@ class check_readandwrite(unittest.TestCase):
         e = experiment(string=path)
         self.assertEqual(e.var.title, u'New experiment')
         for basename in pool:
-            self.assertIn(basename, e.pool)
+            assert basename in e.pool
         osexpwriter(e, 'tmp.osexp')
         r = osexpreader(e, 'tmp.osexp')
         self.assertEqual(r.format, fmt)
