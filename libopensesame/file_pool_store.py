@@ -110,8 +110,13 @@ class FilePoolStore:
             try:
                 folder_process_id = int(folder.split('_')[-1])
                 if folder_process_id not in current_process_ids:
-                    os.rmdir(folder)
-                    oslogger.debug(f'deleted leftover folder: {folder}')
+                    try:
+                        shutil.rmtree(folder)
+                    except Exception as e:
+                        oslogger.warning(
+                            f'failed to delete leftover folder: {folder} ({e})')
+                    else:
+                        oslogger.debug(f'deleted leftover folder: {folder}')
             except ValueError:
                 oslogger.error(
                     f'unexpected folder name format, skipping {folder}')
