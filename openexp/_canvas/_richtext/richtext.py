@@ -221,7 +221,7 @@ class RichText(Element):
         """
         try:
             return Image.fromqimage(self._to_qimage())
-        except ImportError:
+        except (ImportError, TypeError):
             pass
         import numpy as np
         oslogger.info('no Qt bindings, using custom QImage to PIL conversion')
