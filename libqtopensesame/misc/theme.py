@@ -19,7 +19,7 @@ along with OpenSesame.  If not, see <http://www.gnu.org/licenses/>.
 from libopensesame.py3compat import *
 import os.path
 import sys
-import imp
+import importlib.util
 import qtawesome as qta
 from openexp import resources
 from libopensesame import misc
@@ -65,10 +65,12 @@ class Theme:
                 resources[f'theme/{self.theme}']
         self.theme_info = os.path.join(self.theme_folder, u"__theme__.py")
         if os.path.exists(self.theme_info):
-            info = imp.load_source(
+            # Load the theme module from file
+            spec = importlib.util.spec_from_file_location(
                 self.theme,
-                safe_str(self.theme_info, enc=sys.getfilesystemencoding())
-            )
+                safe_str(self.theme_info, enc=sys.getfilesystemencoding()))
+            info = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(info)
             with safe_open(os.path.join(self.theme_folder, info.qss)) as fd:
                 self._qss = fd.read()
             self._icon_map = info.icon_map
