@@ -103,7 +103,7 @@ class QtOpenSesame(QtWidgets.QMainWindow, BaseComponent):
         script_dir = os.path.dirname(os.path.abspath(__file__))  # Directorio del archivo actual
         gif_path = os.path.join(script_dir, "eyeguide3.gif")
 
-        # Verifica si el archivo GIF existe
+        # Verifica si el archivo GIF existe en la ruta
         if not os.path.exists(gif_path):
             print(f"El archivo no se encuentra en: {gif_path}")
             return  # Detiene la inicialización si no se encuentra el archivo
