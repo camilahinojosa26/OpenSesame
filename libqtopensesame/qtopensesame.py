@@ -93,10 +93,44 @@ class QtOpenSesame(QtWidgets.QMainWindow, BaseComponent):
         from libqtopensesame.widgets.pool_widget import PoolWidget
         from libqtopensesame.extensions import ExtensionManager
         import random
+        from PyQt5 import QtWidgets, QtGui
 
         # Make sure that icons are shown in context menu, regardless of the
         # system settings. This is necessary, because Ubuntu doesn't show menu
         # icons by default.
+
+        # Obtener la ruta absoluta del GIF
+        script_dir = os.path.dirname(os.path.abspath(__file__))  # Directorio del archivo actual
+        gif_path = os.path.join(script_dir, "eyeguide3.gif")
+
+        # Verifica si el archivo GIF existe
+        if not os.path.exists(gif_path):
+            print(f"El archivo no se encuentra en: {gif_path}")
+            return  # Detiene la inicialización si no se encuentra el archivo
+
+        # Crear un widget overlay
+        self.overlay = QtWidgets.QWidget(self)
+        self.overlay.setGeometry(0, 0, self.width(), self.height())  # Ajusta según sea necesario
+        self.overlay.setAttribute(QtCore.Qt.WA_TranslucentBackground)  # Hacerlo transparente
+
+        # Inicializa el QLabel para el GIF
+        self.gif_label = QtWidgets.QLabel(self.overlay)
+        self.movie = QtGui.QMovie(gif_path)
+
+        if not self.movie.isValid():
+            print("El GIF no se pudo cargar.")
+            return  # Detiene la inicialización si el GIF no es válido
+        
+        self.gif_label.setMovie(self.movie)
+        self.gif_label.setGeometry(580, -10, 100, 100)  # Ajusta según sea necesario
+        self.movie.start()
+
+        # Asegúrate de que el overlay esté por encima de otros elementos
+        self.overlay.raise_()
+        self.overlay.show()
+
+        
+
         QtWidgets.QApplication.setAttribute(QtCore.Qt.AA_DontShowIconsInMenus,
                                             False)
         # Initialize random number generator
