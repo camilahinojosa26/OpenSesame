@@ -1,21 +1,9 @@
 # -*- coding:utf-8 -*-
-
 """
-This file is part of OpenSesame.
-
-OpenSesame is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-OpenSesame is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with OpenSesame.  If not, see <http://www.gnu.org/licenses/>.
+Este archivo es parte de OpenSesame.
+...
 """
+
 from libopensesame.py3compat import *
 import os
 import sys
@@ -24,16 +12,18 @@ from libopensesame import misc, metadata
 from libqtopensesame.extensions import BaseExtension
 from libqtopensesame.misc.translate import translation_context
 from libqtopensesame.misc import template_info
+import subprocess  # Para ejecutar el archivo Python
+
 _ = translation_context(u'get_started', category=u'extension')
 
 
 class GetStarted(BaseExtension):
-    r"""Shows the get-started tab and opens an experiment on startup, if one
-    was passed on the command line.
+    r"""Muestra la pestaña "Get started" y abre un experimento al inicio, si uno
+    fue pasado en la línea de comandos.
     """
     
     def activate(self):
-        # Initialize templates
+        # Inicializa plantillas
         templates = []
         for i, (path, desc) in enumerate(template_info.templates):
             try:
@@ -44,13 +34,11 @@ class GetStarted(BaseExtension):
                 cls = u'important-button'
             else:
                 cls = u'button'
-            # We need to use forward slashes, also on Windows, otherwise it
-            # leads to an invalid URL when prefixed with opensesame://
             path = os.path.abspath(path).replace(u'\\', u'/')
-            md = u'<a href="opensesame://%s" class="%s">%s</a><br />' \
-                % (path, cls, desc)
+            md = u'<a href="opensesame://%s" class="%s">%s</a><br />' % (path, cls, desc)
             templates.append(md)
-        # Initialize recent experiments
+        
+        # Inicializa experimentos recientes
         if not self.main_window.recent_files:
             recent = []
         else:
@@ -60,7 +48,13 @@ class GetStarted(BaseExtension):
                 md = u'<a href="opensesame://event.open_recent_%d" class="%s">%s</a><br />' % \
                     (i, cls, self._unambiguous_path(path))
                 recent.append(md)
-        # Create markdown
+        
+        # Añadir botón para ejecutar PsyEye.py
+        script_dir = os.path.dirname(os.path.abspath(__file__))  # Directorio actual
+        psyeye_path = os.path.join(script_dir, "PsyEye.py")  # Ruta del archivo PsyEye.py
+        psyeye_button = u'<a href="opensesame://event.run_psyeye" class="button">Run PsyEye</a><br />'
+
+        # Crear markdown
         with safe_open(self.ext_resource(u'get_started.md')) as fd:
             md = fd.read()
         md = md % {
@@ -69,21 +63,24 @@ class GetStarted(BaseExtension):
             u'templates': u'  \n'.join(templates),
             u'recent_experiments': u'  \n'.join(recent)
         }
-        self.tabwidget.open_markdown(md, title=_(u'Get started!'),
-                                     icon=u'document-new')
+
+        # Insertar botón de PsyEye en el markdown
+        md += u'  \n' + psyeye_button
+
+        self.tabwidget.open_markdown(md, title=_(u'Get started!'), icon=u'document-new')
 
     def _unambiguous_path(self, path):
-        r"""If the path basename is unique among the resent experiments, this
-        is used. Otherwise, the full path is used.
+        r"""Si el nombre del archivo es único entre los experimentos recientes, se
+        utiliza. De lo contrario, se usa la ruta completa.
 
         Parameters
         ----------
         path
-            The path to shorten unambiguously.
+            La ruta a acortar de manera unívoca.
 
         Returns
         -------
-        The unambiguously shortened path.
+        La ruta acortada unívocamente.
         """
         basename = os.path.basename(path)
         basenames = \
@@ -108,11 +105,17 @@ class GetStarted(BaseExtension):
 
     @BaseExtension.as_thread(wait=500)
     def event_startup(self):
-        # Open an experiment if it has been specified as a command line
-        # argument and suppress the new wizard in that case.
+        # Abrir un experimento si se ha especificado como argumento en la línea de
+        # comandos y suprimir el asistente en ese caso.
         if len(sys.argv) >= 2 and os.path.isfile(sys.argv[1]):
             path = safe_decode(sys.argv[1], enc=sys.getfilesystemencoding(),
                                errors=u'ignore')
             self.main_window.open_file(path=path)
             return
         self.activate()
+
+    def event_run_psyeye(self):
+        """Evento que ejecuta el archivo PsyEye.py."""
+        script_dir = os.path.dirname(os.path.abspath(__file__))  # Directorio del archivo actual
+        psyeye_path = os.path.join(script_dir, "PsyEye.py")  # Ruta del archivo PsyEye.py
+        subprocess.run([sys.executable, psyeye_path])  # Ejecutar el archivo PsyEye.py
