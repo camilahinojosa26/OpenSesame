@@ -8,9 +8,15 @@ from PyQt5.QtWidgets import (
     QLabel,
     QHBoxLayout,
 )
+from qtpy import QtCore
 from PyQt5.QtCore import Qt, QPoint
 from PyQt5.QtGui import QIcon
 import sys
+import random
+import os
+from qtpy.QtMultimedia import QSoundEffect
+
+
 
 
 class CustomTitleBar(QWidget):
@@ -61,6 +67,17 @@ class Chatbot(QWidget):
     def __init__(self):
         super().__init__()
         self.is_dark_mode = True
+
+        # Construct the full path to the .wav file
+        self.sound_files = [
+            os.path.join(os.path.dirname(__file__), "cartoon_eye.wav"),
+            os.path.join(os.path.dirname(__file__), "blink_eye.wav")
+        ]
+        
+        # Initialize sound effect
+        self.sound_effect = QSoundEffect()
+        self.sound_effect.setVolume(0.5)
+
         self.setWindowFlags(Qt.FramelessWindowHint)
         self.init_ui()
 
@@ -159,12 +176,17 @@ class Chatbot(QWidget):
         bot_response = self.get_bot_response(user_message)
 
         self.chat_area.append(f"<b>PsyEye:</b> {bot_response}")
+        
+        random_sound_file = random.choice(self.sound_files)  # Select a random sound
+        self.sound_effect.setSource(QtCore.QUrl.fromLocalFile(random_sound_file))  # Set the selected sound
+        self.sound_effect.play()
 
         self.chat_area.verticalScrollBar().setValue(
             self.chat_area.verticalScrollBar().maximum()
         )
 
         self.input_field.clear()
+
 
     def get_bot_response(self, message):
         message = message.lower()
