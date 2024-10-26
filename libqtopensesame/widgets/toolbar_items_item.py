@@ -4,6 +4,8 @@ from libopensesame.py3compat import *
 from libqtopensesame.misc.base_subcomponent import BaseSubcomponent
 from libqtopensesame.misc.drag_and_drop import send
 from libqtopensesame.misc.translate import translation_context
+from qtpy.QtMultimedia import QSoundEffect
+import os
 
 _ = translation_context(u'toolbar_items_item', category=u'core')
 
@@ -17,6 +19,15 @@ class ToolbarItemsItem(BaseSubcomponent, QtWidgets.QLabel):
         self.setToolTip(_("Drag this <b>%s</b> item to the intended location in the overview area or into the item list of a sequence tab") % self.item)
         self.setCursor(QtGui.QCursor(QtCore.Qt.OpenHandCursor))
         self.setPixmap(self.pixmap)
+
+        # Construct the full path to the .wav file
+        sound_path = os.path.join(os.path.dirname(__file__), "drag_drop_4.wav")
+        
+        # Initialize sound effect
+        self.sound_effect = QSoundEffect()
+        self.sound_effect.setSource(QtCore.QUrl.fromLocalFile(sound_path))
+        self.sound_effect.setVolume(0.5)
+        self.sound_effect.setLoopCount(QSoundEffect.Infinite) 
 
     def mousePressEvent(self, e):
         if e.buttons() != QtCore.Qt.LeftButton:
@@ -38,6 +49,9 @@ class ToolbarItemsItem(BaseSubcomponent, QtWidgets.QLabel):
     def mouseMoveEvent(self, e):
         if e.buttons() == QtCore.Qt.LeftButton:
             if (e.pos() - self.start_pos).manhattanLength() >= QtWidgets.QApplication.startDragDistance():
+
+                self.sound_effect.play()
+
                 drag = QtGui.QDrag(self)
                 mime_data = QtCore.QMimeData()
                 mime_data.setData('application/json', json.dumps(self.data).encode('utf-8'))
@@ -88,6 +102,13 @@ class ToolbarItemsItem(BaseSubcomponent, QtWidgets.QLabel):
         if hasattr(self, 'animation'):
             self.animation.stop()
             self.setPixmap(self.pixmap)  # Reset the pixmap when leaving
+        
+        self.stop_sound()
+
+    def stop_sound(self):
+        """Stop the looping sound effect."""
+        if self.sound_effect.isPlaying():
+            self.sound_effect.stop()
 
 # Alias for backwards compatibility
 toolbar_items_item = ToolbarItemsItem
