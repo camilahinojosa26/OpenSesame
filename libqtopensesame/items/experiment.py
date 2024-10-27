@@ -28,6 +28,16 @@ from qtpy import QtCore, QtWidgets, QtGui
 from libqtopensesame.misc.translate import translation_context
 _ = translation_context(u'experiment', category=u'item')
 
+class BorderDelegate(QtWidgets.QStyledItemDelegate):
+    def paint(self, painter, option, index):
+        super().paint(painter, option, index)
+        # Dibujar el borde negro
+        painter.save()
+        pen = QtGui.QPen(QtGui.QColor("black"))
+        pen.setWidth(1)
+        painter.setPen(pen)
+        painter.drawRect(option.rect)
+        painter.restore()
 
 class Experiment(ExperimentRuntime):
 
@@ -72,6 +82,8 @@ class Experiment(ExperimentRuntime):
                          fullscreen=None,
                          workspace=BasePythonWorkspace(self))
 
+        self.ui.itemtree.setItemDelegate(BorderDelegate(self.ui.itemtree))
+
     @property
     def overview_area(self):
         return self.main_window.ui.itemtree
@@ -84,6 +96,22 @@ class Experiment(ExperimentRuntime):
     def default_description(self):
         return _(u'Default description')
 
+    def get_icon_color(self, item_name):
+        """Return the color of the icon based on the item name."""
+        icon_colors = {
+            "loop": "#FF0000",  # Rojo
+            "sequence": "#00FF00",  # Verde
+            "sketchpad": "#0000FF",  # Azul
+            "feedback": "#FFFF00",  # Amarillo
+            "sampler": "#FF00FF",  # Magenta
+            "synth": "#800080",  # Morado
+            "keyboard_response": "#00FFFF",  # Cian
+            "mouse_response": "#FFA500",  # Naranja
+            "logger": "#808080",  # Gris
+            "inline_script": "#000000",  # Negro
+        }
+        return icon_colors.get(item_name, "#FFFFFF")  # Blanco por defecto
+    
     def module_container(self):
         """
         Specifies the module that is used to get items from.
@@ -100,21 +128,18 @@ class Experiment(ExperimentRuntime):
         """
         return u'qt'
 
+    def apply_style(self, item, color):
+        """Apply background color with opacity and border to the QTreeWidgetItem."""
+        rgba_color = QtGui.QColor(color)
+        rgba_color.setAlphaF(0.7)  # Opacidad 0.7
+        brush = QtGui.QBrush(rgba_color)
+        for column in range(item.columnCount()):
+            item.setBackground(column, brush)
+            item.setForeground(column, QtGui.QBrush(QtGui.QColor("black")))
+            item.setFont(column, QtGui.QFont("Arial", weight=QtGui.QFont.Bold))
+
     def build_item_tree(self, toplevel=None, items=[], max_depth=-1,
                         select=None):
-        r"""Builds the overview area for the full experiment.
-
-        Parameters
-        ----------
-        toplevel, optional
-            The toplevel widget.
-        items, optional
-            A list of items that have already been added, to prevent recursion.
-        max_depth, optional
-            The maximum depth of the tree.
-        select, optional
-            The selected item.
-        """
         if self.overview_area.locked:
             return
         from libqtopensesame.widgets.tree_unused_items_item import \
@@ -130,6 +155,22 @@ class Experiment(ExperimentRuntime):
         self.overview_area.scrollToTop()
         if select is not None:
             self.ui.itemtree.select_item(select)
+
+        def apply_style_recursively(item):
+            """Apply style to the item and its children recursively."""
+            if hasattr(item, 'item_type'):
+                color = self.get_icon_color(item.item_type)
+                self.apply_style(item, color)
+            for j in range(item.childCount()):
+                child = item.child(j)
+                apply_style_recursively(child)
+
+        for i in range(self.overview_area.topLevelItemCount()):
+            item = self.overview_area.topLevelItem(i)
+            for j in range(item.childCount()):
+                child = item.child(j)
+                apply_style_recursively(child)
+    
 
     def rename(self, from_name, to_name):
         """
