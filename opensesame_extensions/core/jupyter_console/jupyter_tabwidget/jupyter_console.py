@@ -25,7 +25,9 @@ from libopensesame.oslogging import oslogger
 from libqtopensesame.misc.config import cfg
 from libqtopensesame.widgets.base_widget import BaseWidget
 from qtpy.QtWidgets import QHBoxLayout
+from qtpy import QtCore
 from qtpy.QtGui import QFont
+from qtpy.QtMultimedia import QSoundEffect
 from qtconsole import styles
 from .constants import (
     CHANGE_DIR_CMD,
@@ -56,6 +58,10 @@ class JupyterConsole(BaseWidget):
             kernel = cfg.jupyter_default_kernel
         self._console_tabwidget = parent
         self.name = name
+
+        self.sound_effect = QSoundEffect()
+        self.sound_effect.setVolume(0.5)
+        
         # Initialize Jupyter Widget
         if inprocess:
             from qtconsole.inprocess import (
@@ -78,6 +84,10 @@ class JupyterConsole(BaseWidget):
         self._jupyter_widget = JupyterWidget(self)
         self._jupyter_widget.kernel_manager = self._kernel_manager
         self._jupyter_widget.kernel_client = self._kernel_client
+        # Reproducir el sonido al abrir la consola
+        self.sound_effect.setSource(QtCore.QUrl.fromLocalFile(os.path.join(os.path.dirname(__file__), "terminal.wav")))  # Set the selected sound
+        self.sound_effect.play()
+
         # Set theme
         self._jupyter_widget._control.setFont(
             QFont(
@@ -153,7 +163,9 @@ class JupyterConsole(BaseWidget):
         self._jupyter_widget._control.setFocus()
 
     def set_busy(self, busy=True):
-
+        
+        # Sound effect for busy state
+        
         if busy:
             icon = u'os-run'
         else:
@@ -195,7 +207,7 @@ class JupyterConsole(BaseWidget):
         self._jupyter_widget.kernel_manager.shutdown_kernel()
 
     def show_prompt(self):
-
+        
         self._jupyter_widget._show_interpreter_prompt()
 
     def get_workspace_globals(self):

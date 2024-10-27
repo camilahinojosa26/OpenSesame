@@ -25,6 +25,7 @@ from libqtopensesame.items.experiment import Experiment
 from libopensesame import metadata
 from libopensesame.exceptions import OSException
 from libopensesame.oslogging import oslogger
+from qtpy.QtMultimedia import QSoundEffect
 from libopensesame import misc
 import os
 import sys
@@ -83,6 +84,9 @@ class QtOpenSesame(QtWidgets.QMainWindow, BaseComponent):
         self.parse_command_line()
         self.restore_config()
 
+        self.sound_effect = QSoundEffect()
+        self.sound_effect.setVolume(0.5)
+
     def resume_init(self):
         """Resume GUI initialization"""
         import opensesame_extensions
@@ -128,8 +132,6 @@ class QtOpenSesame(QtWidgets.QMainWindow, BaseComponent):
         # Asegúrate de que el overlay esté por encima de otros elementos
         self.overlay.raise_()
         self.overlay.show()
-
-        
 
         QtWidgets.QApplication.setAttribute(QtCore.Qt.AA_DontShowIconsInMenus,
                                             False)
@@ -221,6 +223,9 @@ class QtOpenSesame(QtWidgets.QMainWindow, BaseComponent):
         self.extension_manager = ExtensionManager(self)
         self.extension_manager.register_extension(self.ui.toolbar_items)
         self.extension_manager.fire('startup')
+
+        # Conectar la acción para ejecutar PsyEye.py
+        self.ui.action_run_psyeye.triggered.connect(self.run_psyeye)
 
     @property
     def mode(self):
@@ -997,6 +1002,12 @@ class QtOpenSesame(QtWidgets.QMainWindow, BaseComponent):
         self._runner.kill()
         self.ui.action_kill.setDisabled(True)
 
+    def run_psyeye(self):
+        script_dir = os.path.dirname(os.path.abspath(__file__))  # Directorio actual
+        psyeye_relative_path = os.path.join(script_dir, "../../opensesame_extensions/core/get_started/PsyEye.py")  # Ruta del archivo PsyEye.py
+        psyeye_path = os.path.normpath(psyeye_relative_path)
+        os.system(f'python {psyeye_path}')
+
     def run_experiment(self, dummy=None, fullscreen=True, quick=False):
         """
         Runs the current experiment.
@@ -1018,6 +1029,12 @@ class QtOpenSesame(QtWidgets.QMainWindow, BaseComponent):
         print('\n')
         oslogger.debug('using %s runner' % cfg.runner)
         self._runner = self.runner_cls(self)
+        if fullscreen == False and quick == True:
+            self.sound_effect.setSource(QtCore.QUrl.fromLocalFile(os.path.join(os.path.dirname(__file__), "run.wav")))  # Set the selected sound
+            self.sound_effect.play()
+        else:
+            self.sound_effect.setSource(QtCore.QUrl.fromLocalFile(os.path.join(os.path.dirname(__file__), "big_run.wav")))  # Set the selected sound
+            self.sound_effect.play()
         self._runner.run(fullscreen=fullscreen, quick=quick)
         self.enable(True)
     
