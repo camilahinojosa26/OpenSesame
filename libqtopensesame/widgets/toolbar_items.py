@@ -46,7 +46,7 @@ class ToolbarItems(BaseSubcomponent, QtWidgets.QToolBar):
             if isinstance(child, QtWidgets.QToolButton):
                 self._expand_button = child
                 break
-
+        
     def add_content(self, content):
         r"""Add double rows of content to the toolbar.
 

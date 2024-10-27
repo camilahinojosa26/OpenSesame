@@ -47,6 +47,7 @@ class TreeItemItem(TreeBaseItem):
         self.setFlags(QtCore.Qt.ItemIsEditable | self.flags())
         self.setIcon(0, self.theme.qicon(item.item_icon()))
         self.name = item.name
+        self.item_type = item.item_type
         # Only allow drops on used items
         self._droppable = self.item.name in self.item.experiment.items.used()
         self._draggable = True
