@@ -245,6 +245,7 @@
    <addaction name="action_close_other_tabs"/>
    <addaction name="action_show_overview"/>
    <addaction name="action_show_pool"/>
+   <addaction name="action_run_psyeye"/> 
   </widget>
   <widget class="toolbar_items" name="toolbar_items">
    <property name="windowTitle">
@@ -475,6 +476,12 @@
    </property>
    <property name="text">
     <string>New window</string>
+   </property>
+  </action>
+  <action name="action_run_psyeye">
+   <property name="icon">
+    <iconset theme="eyeguide">
+     <normaloff>.</normaloff>.</iconset>
    </property>
   </action>
  </widget>
