@@ -87,6 +87,8 @@ class QtOpenSesame(QtWidgets.QMainWindow, BaseComponent):
         self.sound_effect = QSoundEffect()
         self.sound_effect.setVolume(0.5)
 
+        self.ui = None
+
     def resume_init(self):
         """Resume GUI initialization"""
         import opensesame_extensions
@@ -111,7 +113,7 @@ class QtOpenSesame(QtWidgets.QMainWindow, BaseComponent):
         if not os.path.exists(gif_path):
             print(f"El archivo no se encuentra en: {gif_path}")
             return  # Detiene la inicialización si no se encuentra el archivo
-
+        '''
         # Crear un widget overlay
         self.overlay = QtWidgets.QWidget(self)
         self.overlay.setGeometry(0, 0, self.width(), self.height())  # Ajusta según sea necesario
@@ -132,7 +134,7 @@ class QtOpenSesame(QtWidgets.QMainWindow, BaseComponent):
         # Asegúrate de que el overlay esté por encima de otros elementos
         self.overlay.raise_()
         self.overlay.show()
-
+        ''' 
         QtWidgets.QApplication.setAttribute(QtCore.Qt.AA_DontShowIconsInMenus,
                                             False)
         # Initialize random number generator
@@ -1003,10 +1005,11 @@ class QtOpenSesame(QtWidgets.QMainWindow, BaseComponent):
         self.ui.action_kill.setDisabled(True)
 
     def run_psyeye(self):
-        script_dir = os.path.dirname(os.path.abspath(__file__))  # Directorio actual
-        psyeye_relative_path = os.path.join(script_dir, "../../opensesame_extensions/core/get_started/PsyEye.py")  # Ruta del archivo PsyEye.py
+        script_dir = os.path.dirname(__file__)  # Directorio actual
+        psyeye_relative_path = os.path.join(script_dir, "../opensesame_extensions/core/get_started/PsyEye.py")  # Ruta del archivo PsyEye.py
         psyeye_path = os.path.normpath(psyeye_relative_path)
-        os.system(f'python {psyeye_path}')
+        python_executable = "/usr/bin/python3"  # Especifica la ruta completa del intérprete de Python
+        os.system(f'{python_executable} {psyeye_path}')
 
     def run_experiment(self, dummy=None, fullscreen=True, quick=False):
         """
