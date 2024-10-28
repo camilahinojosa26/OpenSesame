@@ -483,6 +483,9 @@
     <iconset theme="eyeguide">
      <normaloff>.</normaloff>.</iconset>
    </property>
+   <property name="text">
+    <string>Chatbot</string>
+   </property>
   </action>
  </widget>
  <customwidgets>

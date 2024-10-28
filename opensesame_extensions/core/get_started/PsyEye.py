@@ -175,7 +175,7 @@ class Chatbot(QWidget):
 
         bot_response = self.get_bot_response(user_message)
 
-        self.chat_area.append(f"<b>PsyEye:</b> {bot_response}")
+        self.chat_area.append(f"<b>EyeGuide:</b> {bot_response}")
         
         random_sound_file = random.choice(self.sound_files)  # Select a random sound
         self.sound_effect.setSource(QtCore.QUrl.fromLocalFile(random_sound_file))  # Set the selected sound
