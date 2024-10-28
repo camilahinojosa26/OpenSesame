@@ -28,17 +28,6 @@ from qtpy import QtCore, QtWidgets, QtGui
 from libqtopensesame.misc.translate import translation_context
 _ = translation_context(u'experiment', category=u'item')
 
-class BorderDelegate(QtWidgets.QStyledItemDelegate):
-    def paint(self, painter, option, index):
-        super().paint(painter, option, index)
-        # Dibujar el borde negro
-        painter.save()
-        pen = QtGui.QPen(QtGui.QColor("black"))
-        pen.setWidth(1)
-        painter.setPen(pen)
-        painter.drawRect(option.rect)
-        painter.restore()
-
 class Experiment(ExperimentRuntime):
 
     """Contains various GUI controls for the experiment"""
@@ -81,8 +70,6 @@ class Experiment(ExperimentRuntime):
                          experiment_path=experiment_path, resources=resources,
                          fullscreen=None,
                          workspace=BasePythonWorkspace(self))
-
-        self.ui.itemtree.setItemDelegate(BorderDelegate(self.ui.itemtree))
 
     @property
     def overview_area(self):
@@ -134,9 +121,10 @@ class Experiment(ExperimentRuntime):
         rgba_color.setAlphaF(0.7)  # Opacidad 0.7
         brush = QtGui.QBrush(rgba_color)
         for column in range(item.columnCount()):
-            item.setBackground(column, brush)
-            item.setForeground(column, QtGui.QBrush(QtGui.QColor("black")))
-            item.setFont(column, QtGui.QFont("Arial", weight=QtGui.QFont.Bold))
+            if column == 0:
+                item.setBackground(column, brush)
+                item.setForeground(column, QtGui.QBrush(QtGui.QColor("black")))
+                item.setFont(column, QtGui.QFont("Arial", weight=QtGui.QFont.Bold))
 
     def build_item_tree(self, toplevel=None, items=[], max_depth=-1,
                         select=None):
@@ -155,12 +143,11 @@ class Experiment(ExperimentRuntime):
         self.overview_area.scrollToTop()
         if select is not None:
             self.ui.itemtree.select_item(select)
-
+        
         def apply_style_recursively(item):
             """Apply style to the item and its children recursively."""
-            if hasattr(item, 'item_type'):
-                color = self.get_icon_color(item.item_type)
-                self.apply_style(item, color)
+            color = self.get_icon_color(item.item_type)
+            self.apply_style(item, color)
             for j in range(item.childCount()):
                 child = item.child(j)
                 apply_style_recursively(child)
@@ -170,7 +157,6 @@ class Experiment(ExperimentRuntime):
             for j in range(item.childCount()):
                 child = item.child(j)
                 apply_style_recursively(child)
-    
 
     def rename(self, from_name, to_name):
         """
