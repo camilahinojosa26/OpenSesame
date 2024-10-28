@@ -10,7 +10,7 @@ from PyQt5.QtWidgets import (
 )
 from qtpy import QtCore
 from PyQt5.QtCore import Qt, QPoint
-from PyQt5.QtGui import QIcon
+from PyQt5.QtGui import QIcon, QMovie
 import sys
 import random
 import os
@@ -30,10 +30,19 @@ class CustomTitleBar(QWidget):
         self.layout = QHBoxLayout()
         self.layout.setContentsMargins(10, 10, 10, 10)
         self.setFixedHeight(40)
+
+        # Añadir el QLabel para el GIF
+        self.gif_label = QLabel(self)
+        gif_path = os.path.join(os.path.dirname(__file__), "eyeguide.gif")
+        self.movie = QMovie(gif_path)
+        self.gif_label.setMovie(self.movie)
+        self.movie.start()
+
         self.title = QLabel("EyeGuide")
         self.title.setStyleSheet("color: white; font-size: 16px;")
         self.title.setAlignment(Qt.AlignCenter)
         self.layout.addStretch()
+        self.layout.addWidget(self.gif_label)  # Añadir el GIF antes del título
         self.layout.addWidget(self.title)
         self.layout.addStretch()
 
@@ -175,7 +184,7 @@ class Chatbot(QWidget):
 
         bot_response = self.get_bot_response(user_message)
 
-        self.chat_area.append(f"<b>EyeGuide:</b> {bot_response}")
+        self.chat_area.append(f"<b>PsyEye:</b> {bot_response}")
         
         random_sound_file = random.choice(self.sound_files)  # Select a random sound
         self.sound_effect.setSource(QtCore.QUrl.fromLocalFile(random_sound_file))  # Set the selected sound
