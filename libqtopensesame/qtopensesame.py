@@ -87,8 +87,6 @@ class QtOpenSesame(QtWidgets.QMainWindow, BaseComponent):
         self.sound_effect = QSoundEffect()
         self.sound_effect.setVolume(0.5)
 
-        self.ui = None
-
     def resume_init(self):
         """Resume GUI initialization"""
         import opensesame_extensions

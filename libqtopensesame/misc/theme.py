@@ -50,6 +50,9 @@ class Theme:
         self.theme = cfg.theme if theme is None else theme
         self.theme_folder = resources[f'theme/{self.theme}']
         self._icon_theme_path = self.theme_folder
+        self._icon_theme = 'default'
+        self._icon_map = 'MokaSesame'  # Cambiado a None para inicializar correctamente
+        self.icon_map = {}
         oslogger.debug(u"theme = '%s' (%s)" % (self.theme, self.theme_folder))
         # The theme folder must exist, and contain a file called __theme__.py,
         # if not, we fall back to the default theme, which is assumed to always
@@ -73,7 +76,7 @@ class Theme:
             spec.loader.exec_module(info)
             with safe_open(os.path.join(self.theme_folder, info.qss)) as fd:
                 self._qss = fd.read()
-            self._icon_map = info.icon_map
+            self._icon_map = info.icon_map if hasattr(info, 'icon_map') else 'default'  # Asegúrate de asignar aquí
             self._icon_theme = info.icon_theme
             if hasattr(info, 'qdatamatrix'):
                 from qdatamatrix import _qcell
