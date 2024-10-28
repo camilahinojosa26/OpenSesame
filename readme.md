@@ -1,3 +1,20 @@
+# TO INSTALL:
+## Ubuntu / MAC OS:
+Desde la terminal:
+
+chmod +x instalador_opensesame.sh
+./instalador_opensesame.sh
+
+chmod +x uninstall_opensesame.sh
+./uninstall_opensesame.sh
+
+## Windows
+Desde CMD como administrador
+instalador_opensesame.bat
+
+Para desinstalar:
+uninstall_opensesame.bat
+
 # OpenSesame
 
 OpenSesame is a tool to create experiments for psychology, neuroscience, and experimental economics.
