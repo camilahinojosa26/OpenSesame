@@ -29,6 +29,7 @@ from qtpy.QtMultimedia import QSoundEffect
 from libopensesame import misc
 import os
 import sys
+import subprocess
 import warnings
 import platform
 import traceback
@@ -1006,8 +1007,12 @@ class QtOpenSesame(QtWidgets.QMainWindow, BaseComponent):
         script_dir = os.path.dirname(__file__)  # Directorio actual
         psyeye_relative_path = os.path.join(script_dir, "../opensesame_extensions/core/get_started/PsyEye.py")  # Ruta del archivo PsyEye.py
         psyeye_path = os.path.normpath(psyeye_relative_path)
-        python_executable = "/usr/bin/python3"  # Especifica la ruta completa del intérprete de Python
-        os.system(f'{python_executable} {psyeye_path}')
+
+        python_executable = sys.executable
+        if not os.path.exists(psyeye_path):
+            print(f"El archivo no existe: {psyeye_path}")
+        else:
+            subprocess.run([python_executable, psyeye_path], check=True)
 
     def run_experiment(self, dummy=None, fullscreen=True, quick=False):
         """
