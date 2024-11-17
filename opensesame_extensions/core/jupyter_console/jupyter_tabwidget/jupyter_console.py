@@ -60,7 +60,7 @@ class JupyterConsole(BaseWidget):
         self.name = name
 
         self.sound_effect = QSoundEffect()
-        self.sound_effect.setVolume(0.5)
+        self.sound_effect.setVolume(0.8)
         
         # Initialize Jupyter Widget
         if inprocess:

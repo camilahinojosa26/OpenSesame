@@ -85,7 +85,7 @@ class Chatbot(QWidget):
         
         # Initialize sound effect
         self.sound_effect = QSoundEffect()
-        self.sound_effect.setVolume(0.5)
+        self.sound_effect.setVolume(0.8)
 
         self.setWindowFlags(Qt.FramelessWindowHint)
         self.init_ui()
