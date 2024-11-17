@@ -16,40 +16,42 @@ import random
 import os
 from qtpy.QtMultimedia import QSoundEffect
 
-
-
-
 class CustomTitleBar(QWidget):
     def __init__(self, parent):
         super().__init__()
         self.parent = parent
+        self.dark_mode = False
         self.init_ui()
 
     def init_ui(self):
-
         self.layout = QHBoxLayout()
         self.layout.setContentsMargins(10, 10, 10, 10)
         self.setFixedHeight(40)
 
-        # Añadir el QLabel para el GIF
+        # Add the QLabel for the GIF
         self.gif_label = QLabel(self)
         gif_path = os.path.join(os.path.dirname(__file__), "eyeguide.gif")
         self.movie = QMovie(gif_path)
         self.gif_label.setMovie(self.movie)
         self.movie.start()
 
+        self.gif_label.setScaledContents(True)
+        self.gif_label.setFixedWidth(30) 
+        self.gif_label.setFixedHeight(30)
+        self.gif_label.setStyleSheet("background-color: #ECEFF4;")
+
         self.title = QLabel("EyeGuide")
-        self.title.setStyleSheet("color: white; font-size: 16px;")
         self.title.setAlignment(Qt.AlignCenter)
+        self.title.setStyleSheet("color: black; font-size: 16px; background-color: #ECEFF4;")
         self.layout.addStretch()
-        self.layout.addWidget(self.gif_label)  # Añadir el GIF antes del título
+        self.layout.addWidget(self.gif_label)  # Add GIF before title
         self.layout.addWidget(self.title)
         self.layout.addStretch()
 
         self.close_button = QPushButton("×")
         self.close_button.setFixedSize(30, 30)
-        self.close_button.setStyleSheet("background-color: transparent; color: blue;")
         self.close_button.clicked.connect(self.close_window)
+        self.update_close_button_style()
 
         self.layout.addWidget(self.close_button)
         self.setLayout(self.layout)
@@ -57,6 +59,12 @@ class CustomTitleBar(QWidget):
 
     def close_window(self):
         self.parent.close()
+
+    def update_close_button_style(self):
+        if self.dark_mode:
+            self.close_button.setStyleSheet("background-color: transparent; color: white;")
+        else:
+            self.close_button.setStyleSheet("background-color: transparent; color: blue;")
 
     def mousePressEvent(self, event):
         if event.button() == Qt.LeftButton:
@@ -71,6 +79,19 @@ class CustomTitleBar(QWidget):
             self.parent.move(event.globalPos() - self.mouse_down_position)
             event.accept()
 
+    def toggle_mode(self, dark_mode):
+        self.dark_mode = dark_mode
+        self.update_title_style()
+        self.update_close_button_style()
+
+    def update_title_style(self):
+        if self.dark_mode:
+            self.title.setStyleSheet("color: white; font-size: 16px; background-color: #1E1E1E;")
+            self.gif_label.setStyleSheet("background-color: #1E1E1E;")
+
+        else:
+            self.title.setStyleSheet("color: black; font-size: 16px; background-color: #ECEFF4;")
+            self.gif_label.setStyleSheet("background-color: #ECEFF4;")
 
 class Chatbot(QWidget):
     def __init__(self):
@@ -95,17 +116,22 @@ class Chatbot(QWidget):
         self.layout.setContentsMargins(10, 10, 10, 10)
         self.title_bar = CustomTitleBar(self)
         self.layout.addWidget(self.title_bar)
-        self.theme_button = QPushButton("🔦")
+
+        # Theme toggle button
+        self.theme_button = QPushButton()
         self.theme_button.setFixedSize(30, 30)
+        self.update_theme_button_icon(dark_mode=False)
         self.theme_button.setStyleSheet(
             "border: none; background: transparent; font-size: 20px;"
         )
         self.theme_button.clicked.connect(self.toggle_theme)
+        
         self.theme_layout = QHBoxLayout()
         self.theme_layout.addStretch()
         self.theme_layout.addWidget(self.theme_button)
         self.theme_layout.setContentsMargins(10, 10, 10, 10)
         self.layout.addLayout(self.theme_layout)
+
         self.chat_area = QTextEdit()
         self.chat_area.setReadOnly(True)
         self.chat_area.setStyleSheet(
@@ -139,6 +165,7 @@ class Chatbot(QWidget):
         """
         )
         self.layout.addWidget(self.chat_area)
+
         self.input_layout = QHBoxLayout()
         self.input_field = QLineEdit()
         self.input_field.returnPressed.connect(self.send_message)
@@ -153,6 +180,7 @@ class Chatbot(QWidget):
         """
         )
         self.input_layout.addWidget(self.input_field)
+
         self.send_button = QPushButton("Enviar")
         self.send_button.clicked.connect(self.send_message)
         self.send_button.setStyleSheet(
@@ -173,18 +201,28 @@ class Chatbot(QWidget):
         self.input_layout.addWidget(self.send_button)
         self.layout.addLayout(self.input_layout)
         self.setLayout(self.layout)
-        self.apply_dark_mode()
 
     def send_message(self):
         user_message = self.input_field.text()
-        if user_message.strip() == "":
+        if  not user_message:
             return
 
-        self.chat_area.append(f"<b>Tú:</b> {user_message}\n")
+        formatted_message = f"""
+                                <div>
+                                    <p><b style='color: #FFA500;'>Tú:</b><br>{user_message}</p>
+                                    <p><b style='color: #007BFF;'>EyeGuide:</b><br>{self.get_bot_response(user_message)}</p>
+                                </div>
+                            """
 
-        bot_response = self.get_bot_response(user_message)
+        self.chat_area.append(formatted_message)
 
-        self.chat_area.append(f"<b>PsyEye:</b> {bot_response}")
+        formatted_interspace = " ------- • ------- • ------- • ------- "
+
+        self.chat_area.append(f"""
+                                <div style='height: 20px; border-top: 2px solid gray; margin: 10px 0; width: 80%; margin-left: auto; margin-right: auto;'>
+                                    {formatted_interspace}
+                                </div>
+                              """)
         
         random_sound_file = random.choice(self.sound_files)  # Select a random sound
         self.sound_effect.setSource(QtCore.QUrl.fromLocalFile(random_sound_file))  # Set the selected sound
@@ -250,10 +288,21 @@ class Chatbot(QWidget):
 
     def toggle_theme(self):
         if self.is_dark_mode:
-            self.apply_light_mode()
-        else:
             self.apply_dark_mode()
+            self.title_bar.toggle_mode(dark_mode=True)  # Update title to dark mode style
+        else:
+            self.apply_light_mode()
+            self.title_bar.toggle_mode(dark_mode=False)  # Update title to light mode style
         self.is_dark_mode = not self.is_dark_mode
+
+    def update_theme_button_icon(self, dark_mode):
+        """Update the flashlight icon to represent the theme."""
+        if dark_mode:
+            self.theme_button.setText("☀️")
+            self.theme_button.setStyleSheet("color: white; background: transparent; font-size: 20px;")
+        else:
+            self.theme_button.setText("☀️")
+            self.theme_button.setStyleSheet("color: black; background: transparent; font-size: 20px;")
 
     def apply_dark_mode(self):
         self.setStyleSheet(
