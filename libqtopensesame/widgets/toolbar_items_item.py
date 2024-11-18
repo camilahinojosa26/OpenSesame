@@ -21,13 +21,18 @@ class ToolbarItemsItem(BaseSubcomponent, QtWidgets.QLabel):
         self.setPixmap(self.pixmap)
 
         # Construct the full path to the .wav file
-        sound_path = os.path.join(os.path.dirname(__file__), "drag_drop_4.wav")
-        
+        sound_path = os.path.join(os.path.dirname(__file__), "drag_4.wav")
+        sound_path2 = os.path.join(os.path.dirname(__file__), "drop_4.wav")
+
         # Initialize sound effect
         self.sound_effect = QSoundEffect()
         self.sound_effect.setSource(QtCore.QUrl.fromLocalFile(sound_path))
-        self.sound_effect.setVolume(0.5)
+        self.sound_effect.setVolume(0.8)
         self.sound_effect.setLoopCount(QSoundEffect.Infinite) 
+
+        self.sound_effect2 = QSoundEffect()
+        self.sound_effect2.setSource(QtCore.QUrl.fromLocalFile(sound_path2))
+        self.sound_effect2.setVolume(0.8)
 
     def mousePressEvent(self, e):
         if e.buttons() != QtCore.Qt.LeftButton:
@@ -74,6 +79,8 @@ class ToolbarItemsItem(BaseSubcomponent, QtWidgets.QLabel):
                 # Detener la animación de tambaleo cuando se suelta
                 self.stop_shake_animation()
 
+                self.stop_sound()
+
                 name = u'new_%s' % self.item
                 data = {
                     u'type': u'item-snippet',
@@ -101,14 +108,14 @@ class ToolbarItemsItem(BaseSubcomponent, QtWidgets.QLabel):
         """Stops the shake animation."""
         if hasattr(self, 'animation'):
             self.animation.stop()
+            self.sound_effect2.play()
             self.setPixmap(self.pixmap)  # Reset the pixmap when leaving
         
-        self.stop_sound()
-
     def stop_sound(self):
         """Stop the looping sound effect."""
         if self.sound_effect.isPlaying():
             self.sound_effect.stop()
+        
 
 # Alias for backwards compatibility
 toolbar_items_item = ToolbarItemsItem

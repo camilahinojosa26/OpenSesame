@@ -84,19 +84,20 @@ class Experiment(ExperimentRuntime):
         return _(u'Default description')
 
     def get_icon_color(self, item_name):
-        """Return the color of the icon based on the item name."""
+        """Return the color of the icon based on the item name using pastel colors."""
         icon_colors = {
-            "loop": "#FF0000",  # Rojo
-            "sequence": "#00FF00",  # Verde
-            "sketchpad": "#0000FF",  # Azul
-            "feedback": "#FFFF00",  # Amarillo
-            "sampler": "#FF00FF",  # Magenta
-            "synth": "#800080",  # Morado
-            "keyboard_response": "#00FFFF",  # Cian
-            "mouse_response": "#FFA500",  # Naranja
-            "logger": "#808080",  # Gris
-            "inline_script": "#000000",  # Negro
+            "loop": "#FFB3B3",      # Pastel rojo
+            "sequence": "#B3FFB3",   # Pastel verde
+            "sketchpad": "#B3B3FF",  # Pastel azul
+            "feedback": "#FFFFB3",   # Pastel amarillo
+            "sampler": "#FFB3FF",    # Pastel magenta
+            "synth": "#E0B3FF",      # Pastel morado
+            "keyboard_response": "#B3FFFF",  # Pastel cian
+            "mouse_response": "#FFD9B3",     # Pastel naranja
+            "logger": "#D9D9D9",     # Pastel gris
+            "inline_script": "#F0F0F0",      # Pastel gris claro
         }
+        
         return icon_colors.get(item_name, "#FFFFFF")  # Blanco por defecto
     
     def module_container(self):
